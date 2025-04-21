@@ -1,0 +1,25 @@
+{
+    "$id": "#/definitions/button",
+    "type": "object",
+    "required": [
+        "type",
+        "momentary",
+        "state"
+    ],
+    "properties": {
+        "type": {
+            "const": "button"
+        },
+        "momentary": {
+            "type": "boolean"
+        },
+        "state": {
+            "type": "boolean"
+        },
+        "image": {
+            "type": "string",
+            "format": "uri",
+            "description": "URI to the image representing this specific button's visual appearance"
+        }
+    }
+}

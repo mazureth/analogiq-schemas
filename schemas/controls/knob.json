@@ -1,0 +1,46 @@
+{
+    "$id": "#/definitions/knob",
+    "type": "object",
+    "required": [
+        "type",
+        "min",
+        "max",
+        "startAngle",
+        "endAngle"
+    ],
+    "properties": {
+        "type": {
+            "const": "knob"
+        },
+        "min": {
+            "type": "number"
+        },
+        "max": {
+            "type": "number"
+        },
+        "step": {
+            "type": [
+                "number",
+                "null"
+            ]
+        },
+        "startAngle": {
+            "type": "number"
+        },
+        "endAngle": {
+            "type": "number"
+        },
+        "value": {
+            "type": "number"
+        },
+        "zIndex": {
+            "type": "integer",
+            "default": 0
+        },
+        "image": {
+            "type": "string",
+            "format": "uri",
+            "description": "URI to the image representing this specific knob's visual appearance"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "$id": "#/definitions/fader",
+    "type": "object",
+    "required": [
+        "type",
+        "min",
+        "max",
+        "value",
+        "orientation"
+    ],
+    "properties": {
+        "type": {
+            "const": "fader"
+        },
+        "min": {
+            "type": "number"
+        },
+        "max": {
+            "type": "number"
+        },
+        "value": {
+            "type": "number"
+        },
+        "orientation": {
+            "type": "string",
+            "enum": [
+                "horizontal",
+                "vertical"
+            ]
+        },
+        "image": {
+            "type": "string",
+            "format": "uri",
+            "description": "URI to the image representing this specific fader's visual appearance"
+        }
+    }
+}

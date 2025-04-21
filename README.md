@@ -1,0 +1,215 @@
+# Analog Gear Serialization Schema
+
+This repository contains JSON schema definitions for simulating analog audio equipment. The schema standardizes how analog gear controls (knobs, switches, faders, etc.) are digitally represented and manipulated in DAW plugins or gear recall tools.
+
+## Schema Structure
+
+The schema is organized as follows:
+
+- `schemas/`: Contains the JSON schema definitions
+  - `controls/`: Individual control type schemas
+    - `knob.json`: Schema for rotary knobs
+    - `switch.json`: Schema for multi-position switches
+    - `button.json`: Schema for buttons (on/off)
+    - `fader.json`: Schema for linear faders
+  - `unit.json`: Main schema that brings all controls together
+
+## Control Types
+
+### Knob
+
+Represents a rotary control with a defined angle range and min/max values:
+
+```json
+{
+  "type": "knob",
+  "min": 0,
+  "max": 10,
+  "step": 0.1,
+  "startAngle": 30,
+  "endAngle": 330,
+  "value": 5,
+  "zIndex": 1,
+  "image": "https://example.com/images/black-knob.png"
+}
+```
+
+### Switch
+
+Represents a multi-position switch with named options:
+
+```json
+{
+  "type": "switch",
+  "options": ["Option 1", "Option 2", "Option 3"],
+  "currentIndex": 1,
+  "image": "https://example.com/images/toggle-switch.png"
+}
+```
+
+### Button
+
+Represents a button that can be momentary or latching:
+
+```json
+{
+  "type": "button",
+  "momentary": false,
+  "state": true,
+  "image": "https://example.com/images/push-button.png"
+}
+```
+
+### Fader
+
+Represents a linear control with horizontal or vertical orientation:
+
+```json
+{
+  "type": "fader",
+  "min": -12,
+  "max": 12,
+  "value": 0,
+  "orientation": "vertical",
+  "image": "https://example.com/images/slider.png"
+}
+```
+
+## Visual Representation
+
+Each control includes an optional `image` property that specifies a URI to the image representing that specific control's visual appearance. This allows for accurate visual representation of different control types across various gear models, as the appearance of knobs, switches, and other controls often varies between different units.
+
+When building a UI with these schemas:
+1. Use the unit's `faceplateImage` as the background
+2. Position each control at its specified coordinates
+3. Use each control's `image` property to render the specific visual appearance of that control
+
+## Unit Schema
+
+The `unit.json` schema defines a complete piece of analog gear, including its ID, name, category, faceplate image, dimensions, and an array of controls with their positions.
+
+```json
+{
+  "unitId": "example-unit",
+  "name": "Example Unit",
+  "category": "compressor",
+  "faceplateImage": "https://example.com/images/faceplate.png",
+  "width": 800,
+  "height": 300,
+  "controls": [
+    // Control definitions
+  ]
+}
+```
+
+### Categories
+
+Units must be categorized using one of the predefined categories in the `category` property. This ensures consistency and prevents fragmentation (e.g., having both "compressor" and "comp" as separate categories).
+
+The allowed categories are:
+
+- `compressor` - Dynamic range compressors
+- `equalizer` - Graphic, parametric, and other EQs
+- `preamp` - Microphone and instrument preamps
+- `channel-strip` - Combined preamp, EQ, and dynamics processors
+- `mixer` - Mixing consoles and summing amplifiers
+- `reverb` - Reverb and echo chambers
+- `delay` - Delay and echo units
+- `limiter` - Peak limiters and brickwall limiters
+- `gate` - Noise gates and expanders
+- `de-esser` - Sibilance controllers
+- `multi-effects` - Units with multiple effect types
+
+Using a fixed set of categories makes it easier to organize, search, and filter gear in applications that use this schema.
+
+### Dimensions and Layout
+
+The unit schema includes two important properties for defining the drawable space:
+
+- `width`: The width of the drawable space in pixels
+- `height`: The height of the drawable space in pixels
+
+These dimensions provide context for the relative positions of controls. Each control's position (`x` and `y` values between 0 and 1) can be converted to absolute coordinates by multiplying by the unit's width and height.
+
+For example, if a unit has a width of 800px and a control has an x position of 0.25, the absolute x coordinate would be 200px (0.25 * 800).
+
+## Examples
+
+The `examples/` directory contains sample implementations:
+
+- `la2a-compressor.json`: An example of an LA-2A compressor
+- `api-560-eq.json`: An example of an API 560 10-band graphic EQ
+
+## Schema Validation
+
+This repository includes a Python-based validator utility to ensure that unit representations meet the schema requirements.
+
+### Requirements
+
+- Python 3.6+
+- **Required**: jsonschema package
+
+You can install the dependencies using pip:
+```bash
+pip install -r requirements.txt
+```
+
+> **Note**: The validator will not work without the jsonschema package installed.
+
+### Validating Unit Files
+
+You can validate a unit file against the schema using the provided command-line utility:
+
+```bash
+python utils/validator.py examples/la2a-compressor.json
+```
+
+The validator will check if the file conforms to the schema and display any validation errors.
+
+### Running Tests
+
+To run validation tests against all example files:
+
+```bash
+python utils/validator.py --test
+```
+
+This will:
+1. Validate all JSON files in the `examples` directory
+2. Create and validate an intentionally invalid example to demonstrate error detection
+3. Show detailed validation errors if any files fail validation
+
+### Using the Validator in Code
+
+You can also use the validator in your own Python code:
+
+```python
+from utils.validator import AnalogGearValidator
+
+def validate_my_unit(unit_data):
+    validator = AnalogGearValidator()
+    is_valid, errors = validator.validate_unit(unit_data)
+    
+    if is_valid:
+        print("Unit is valid")
+    else:
+        print("Validation errors:", validator.format_errors(errors))
+```
+
+## Usage
+
+This schema can be used to:
+
+1. Create standardized representations of analog hardware
+2. Build UI interfaces that accurately render these controls
+3. Save and recall settings across different platforms
+4. Exchange settings between different applications
+
+To validate your JSON against these schemas, you can use tools like:
+- [AJV](https://ajv.js.org/)
+- [JSONSchema.net](https://www.jsonschema.net/)
+- [JSON Schema Validator](https://www.jsonschemavalidator.net/)
+
+## License
+
+[MIT License](LICENSE) 
