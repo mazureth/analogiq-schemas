@@ -21,6 +21,12 @@ Validate a specific unit file:
 python validator.py ../examples/la2a-compressor.json
 ```
 
+Validate all files in the units directory:
+
+```bash
+python validator.py --units
+```
+
 Run tests on all example files:
 
 ```bash
@@ -42,6 +48,7 @@ is_valid, errors = validator.validate_unit_file('path/to/unit.json')
 unit_data = {
     "unitId": "my-unit",
     "name": "My Unit",
+    "version": "1.0.0",
     "category": "compressor",
     "faceplateImage": "https://example.com/my-unit.png",
     "width": 800,
@@ -52,6 +59,9 @@ unit_data = {
 }
 is_valid, errors = validator.validate_unit(unit_data)
 
+# Validate all units in the units directory
+units_valid, units_results = validator.validate_units_directory()
+
 # Format errors for readable output
 if not is_valid:
     print(validator.format_errors(errors))
@@ -61,10 +71,15 @@ if not is_valid:
 
 The validator checks:
 
-1. Required properties (unitId, name, category, etc.)
+1. Required properties (unitId, name, category, version, etc.)
 2. Property types and formats
 3. Control-specific properties (e.g., min/max for knobs)
 4. Enum values (e.g., category must be one of the predefined values)
+5. Version consistency in unit files:
+   - Filename must match pattern: `unitId-version.json`
+   - The unitId in filename must match unitId property in the file
+   - The version in filename must match version property in the file
+   - Version must follow semantic versioning format
 
 ## Common Validation Errors
 
@@ -72,4 +87,6 @@ The validator checks:
 - Invalid property types
 - Invalid enum values for category
 - Missing control-specific properties
-- Position values outside allowed range (0-1) 
+- Position values outside allowed range (0-1)
+- Version mismatch between filename and content
+- Invalid filename format 

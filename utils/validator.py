@@ -8,6 +8,7 @@ Validates unit representations against the schema definitions
 import os
 import sys
 import json
+import re
 import argparse
 from pathlib import Path
 
@@ -29,6 +30,7 @@ class AnalogGearValidator:
         # Get the root directory (parent of utils)
         self.root_dir = Path(__file__).parent.parent
         self.schema_dir = self.root_dir / "schemas"
+        self.units_dir = self.root_dir / "units"
 
         # Cache for loaded schemas
         self.schema_cache = {}
@@ -40,6 +42,9 @@ class AnalogGearValidator:
         self.resolver = RefResolver.from_schema(
             self.unit_schema, handlers={"": self._local_schema_loader}
         )
+
+        # Compiled regex for filename versioning
+        self.version_pattern = re.compile(r"^(.+)-(\d+\.\d+\.\d+)\.json$")
 
     def _local_schema_loader(self, uri):
         """
@@ -71,13 +76,14 @@ class AnalogGearValidator:
         Returns:
             The loaded schema as a dict
         """
-        if schema_path in self.schema_cache:
-            return self.schema_cache[schema_path]
+        str_path = str(schema_path)
+        if str_path in self.schema_cache:
+            return self.schema_cache[str_path]
 
         try:
             with open(schema_path, "r") as f:
                 schema = json.load(f)
-                self.schema_cache[schema_path] = schema
+                self.schema_cache[str_path] = schema
                 return schema
         except Exception as e:
             print(f"Error loading schema {schema_path}: {e}")
@@ -110,6 +116,36 @@ class AnalogGearValidator:
         try:
             with open(file_path, "r") as f:
                 unit_data = json.load(f)
+
+            # If this is in the units directory, check version consistency
+            path = Path(file_path)
+            if str(self.units_dir) in str(path.parent):
+                filename_match = self.version_pattern.match(path.name)
+                if filename_match:
+                    unit_id, file_version = filename_match.groups()
+
+                    # Check if unitId matches filename
+                    if unit_data.get("unitId") != unit_id:
+                        return False, [
+                            {
+                                "message": f"unitId in file '{unit_data.get('unitId')}' does not match filename '{unit_id}'"
+                            }
+                        ]
+
+                    # Check if version matches filename
+                    if unit_data.get("version") != file_version:
+                        return False, [
+                            {
+                                "message": f"version in file '{unit_data.get('version')}' does not match filename '{file_version}'"
+                            }
+                        ]
+                else:
+                    return False, [
+                        {
+                            "message": f"Invalid filename format. Expected format: 'unitId-version.json'"
+                        }
+                    ]
+
             return self.validate_unit(unit_data)
         except Exception as e:
             return False, [{"message": f"Failed to load or parse file: {e}"}]
@@ -129,6 +165,11 @@ class AnalogGearValidator:
 
         result = []
         for error in errors:
+            if isinstance(error, dict) and "message" in error:
+                # For custom error messages
+                result.append(error["message"])
+                continue
+
             path = "/".join(str(p) for p in error.path) if error.path else ""
             path = f"/{path}" if path else ""
 
@@ -146,6 +187,38 @@ class AnalogGearValidator:
             result.append(f"{path}: {message}{details}")
 
         return "\n".join(result)
+
+    def validate_units_directory(self):
+        """
+        Validate all unit files in the units directory
+
+        Returns:
+            Tuple of (bool, dict): Success flag and dictionary of results by file
+        """
+        if not self.units_dir.exists():
+            return False, {"error": "Units directory not found"}
+
+        unit_files = [f for f in os.listdir(self.units_dir) if f.endswith(".json")]
+
+        if not unit_files:
+            return True, {"message": "No unit files found in units directory"}
+
+        results = {}
+        all_valid = True
+
+        for filename in unit_files:
+            file_path = self.units_dir / filename
+            valid, errors = self.validate_unit_file(file_path)
+
+            results[filename] = {
+                "valid": valid,
+                "errors": self.format_errors(errors) if not valid else None,
+            }
+
+            if not valid:
+                all_valid = False
+
+        return all_valid, results
 
 
 def run_tests(validator, examples_dir):
@@ -184,6 +257,32 @@ def run_tests(validator, examples_dir):
     else:
         print("✅ All files are valid")
 
+    # Now validate the units directory
+    print("\nValidating units directory...")
+    units_valid, units_results = validator.validate_units_directory()
+
+    if "error" in units_results:
+        print(f"⚠️ {units_results['error']}")
+    elif "message" in units_results:
+        print(f"ℹ️ {units_results['message']}")
+    else:
+        count_valid = sum(1 for r in units_results.values() if r["valid"])
+        count_invalid = len(units_results) - count_valid
+
+        print(
+            f"Found {len(units_results)} unit files: {count_valid} valid, {count_invalid} invalid"
+        )
+
+        if count_invalid > 0:
+            print("\nInvalid units:")
+            for filename, result in units_results.items():
+                if not result["valid"]:
+                    print(f"\n❌ {filename} has validation errors:")
+                    print(result["errors"])
+
+    if not units_valid:
+        all_valid = False
+
     return all_valid
 
 
@@ -201,7 +300,7 @@ def create_and_validate_invalid_example(validator, examples_dir):
     invalid_example = {
         "unitId": "invalid-unit",
         "name": "Invalid Unit",
-        # Missing required category
+        # Missing required category and version
         "faceplateImage": "https://example.com/images/invalid.png",
         "width": 800,
         # Missing required height
@@ -244,6 +343,9 @@ def main():
     parser.add_argument(
         "--test", action="store_true", help="Run tests on example files"
     )
+    parser.add_argument(
+        "--units", action="store_true", help="Validate all files in the units directory"
+    )
 
     args = parser.parse_args()
 
@@ -255,6 +357,34 @@ def main():
         if success:
             create_and_validate_invalid_example(validator, examples_dir)
         sys.exit(0 if success else 1)
+
+    if args.units:
+        units_valid, units_results = validator.validate_units_directory()
+
+        if "error" in units_results:
+            print(f"⚠️ {units_results['error']}")
+            sys.exit(1)
+        elif "message" in units_results:
+            print(f"ℹ️ {units_results['message']}")
+            sys.exit(0)
+        else:
+            count_valid = sum(1 for r in units_results.values() if r["valid"])
+            count_invalid = len(units_results) - count_valid
+
+            print(
+                f"Found {len(units_results)} unit files: {count_valid} valid, {count_invalid} invalid"
+            )
+
+            if count_invalid > 0:
+                print("\nInvalid units:")
+                for filename, result in units_results.items():
+                    if not result["valid"]:
+                        print(f"\n❌ {filename} has validation errors:")
+                        print(result["errors"])
+                sys.exit(1)
+            else:
+                print("✅ All units are valid")
+                sys.exit(0)
 
     if not args.file:
         parser.print_help()

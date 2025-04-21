@@ -9,6 +9,11 @@
         "name": {
             "type": "string"
         },
+        "version": {
+            "type": "string",
+            "description": "Semantic version of the unit schema (e.g., 1.0.0)",
+            "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$"
+        },
         "category": {
             "type": "string",
             "description": "Category of the gear",
@@ -110,6 +115,7 @@
     "required": [
         "unitId",
         "name",
+        "version",
         "category",
         "faceplateImage",
         "width",

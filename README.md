@@ -86,12 +86,13 @@ When building a UI with these schemas:
 
 ## Unit Schema
 
-The `unit.json` schema defines a complete piece of analog gear, including its ID, name, category, faceplate image, dimensions, and an array of controls with their positions.
+The `unit.json` schema defines a complete piece of analog gear, including its ID, name, category, version, faceplate image, dimensions, and an array of controls with their positions.
 
 ```json
 {
   "unitId": "example-unit",
   "name": "Example Unit",
+  "version": "1.0.0",
   "category": "compressor",
   "faceplateImage": "https://example.com/images/faceplate.png",
   "width": 800,
@@ -101,6 +102,16 @@ The `unit.json` schema defines a complete piece of analog gear, including its ID
   ]
 }
 ```
+
+### Versioning
+
+Units follow semantic versioning (SemVer) for tracking changes:
+
+- **MAJOR** version for incompatible changes
+- **MINOR** version for new backwards-compatible features
+- **PATCH** version for backwards-compatible bug fixes
+
+The version is included both in the filename (`unitId-version.json`) and as a property in the JSON itself.
 
 ### Categories
 
@@ -133,12 +144,19 @@ These dimensions provide context for the relative positions of controls. Each co
 
 For example, if a unit has a width of 800px and a control has an x position of 0.25, the absolute x coordinate would be 200px (0.25 * 800).
 
+## Units Directory
+
+The `units/` directory contains actual implementations of gear units following this schema. Each unit is versioned according to semantic versioning rules, with the version number included in both the filename and the JSON content.
+
+For example:
+- `units/la2a-compressor-1.0.0.json`
+- `units/api-560-eq-1.0.0.json`
+
+See the [units README](units/README.md) for more information about available units and versioning guidelines.
+
 ## Examples
 
-The `examples/` directory contains sample implementations:
-
-- `la2a-compressor.json`: An example of an LA-2A compressor
-- `api-560-eq.json`: An example of an API 560 10-band graphic EQ
+The `examples/` directory contains sample implementations that demonstrate how to use the schema.
 
 ## Schema Validation
 

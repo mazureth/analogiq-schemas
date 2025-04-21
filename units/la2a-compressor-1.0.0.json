@@ -1,0 +1,85 @@
+{
+    "unitId": "la2a-compressor",
+    "name": "LA-2A Compressor",
+    "version": "1.0.0",
+    "category": "compressor",
+    "faceplateImage": "https://example.com/images/la2a-faceplate.png",
+    "width": 800,
+    "height": 300,
+    "controls": [
+        {
+            "id": "gain-reduction",
+            "label": "Gain Reduction",
+            "type": "knob",
+            "position": {
+                "x": 0.2,
+                "y": 0.3
+            },
+            "min": 0,
+            "max": 10,
+            "startAngle": 30,
+            "endAngle": 330,
+            "value": 4,
+            "zIndex": 1,
+            "image": "https://example.com/images/la2a/black-bakelite-knob.png"
+        },
+        {
+            "id": "output-gain",
+            "label": "Output Gain",
+            "type": "knob",
+            "position": {
+                "x": 0.5,
+                "y": 0.3
+            },
+            "min": 0,
+            "max": 10,
+            "startAngle": 30,
+            "endAngle": 330,
+            "value": 5,
+            "zIndex": 1,
+            "image": "https://example.com/images/la2a/black-bakelite-knob.png"
+        },
+        {
+            "id": "response",
+            "label": "Response",
+            "type": "switch",
+            "position": {
+                "x": 0.8,
+                "y": 0.3
+            },
+            "options": [
+                "Limit",
+                "Compress"
+            ],
+            "currentIndex": 1,
+            "image": "https://example.com/images/la2a/toggle-switch.png"
+        },
+        {
+            "id": "meter-selector",
+            "label": "Meter",
+            "type": "switch",
+            "position": {
+                "x": 0.8,
+                "y": 0.6
+            },
+            "options": [
+                "+4",
+                "+10"
+            ],
+            "currentIndex": 0,
+            "image": "https://example.com/images/la2a/toggle-switch.png"
+        },
+        {
+            "id": "power",
+            "label": "Power",
+            "type": "button",
+            "position": {
+                "x": 0.9,
+                "y": 0.8
+            },
+            "momentary": false,
+            "state": true,
+            "image": "https://example.com/images/la2a/power-button.png"
+        }
+    ]
+}
