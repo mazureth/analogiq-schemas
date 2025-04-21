@@ -95,7 +95,7 @@
                         "format": "uri"
                     }
                 },
-                "allOf": [
+                "oneOf": [
                     {
                         "$ref": "./controls/knob.json"
                     },

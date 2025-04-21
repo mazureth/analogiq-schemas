@@ -266,8 +266,21 @@ def run_tests(validator, examples_dir):
     elif "message" in units_results:
         print(f"ℹ️ {units_results['message']}")
     else:
-        count_valid = sum(1 for r in units_results.values() if r["valid"])
-        count_invalid = len(units_results) - count_valid
+        # Filter to ensure we only work with dictionary results
+        valid_results = {}
+        invalid_results = {}
+
+        # Separate valid and invalid results
+        for filename, result in units_results.items():
+            if isinstance(result, dict):
+                is_valid = result.get("valid", False)
+                if is_valid:
+                    valid_results[filename] = result
+                else:
+                    invalid_results[filename] = result
+
+        count_valid = len(valid_results)
+        count_invalid = len(invalid_results)
 
         print(
             f"Found {len(units_results)} unit files: {count_valid} valid, {count_invalid} invalid"
@@ -275,10 +288,14 @@ def run_tests(validator, examples_dir):
 
         if count_invalid > 0:
             print("\nInvalid units:")
-            for filename, result in units_results.items():
-                if not result["valid"]:
-                    print(f"\n❌ {filename} has validation errors:")
-                    print(result["errors"])
+            for filename, result in invalid_results.items():
+                print(f"\n❌ {filename} has validation errors:")
+                error_msg = result.get("errors", "No error details available")
+                print(error_msg)
+            sys.exit(1)
+        else:
+            print("✅ All units are valid")
+            sys.exit(0)
 
     if not units_valid:
         all_valid = False
@@ -368,8 +385,21 @@ def main():
             print(f"ℹ️ {units_results['message']}")
             sys.exit(0)
         else:
-            count_valid = sum(1 for r in units_results.values() if r["valid"])
-            count_invalid = len(units_results) - count_valid
+            # Filter to ensure we only work with dictionary results
+            valid_results = {}
+            invalid_results = {}
+
+            # Separate valid and invalid results
+            for filename, result in units_results.items():
+                if isinstance(result, dict):
+                    is_valid = result.get("valid", False)
+                    if is_valid:
+                        valid_results[filename] = result
+                    else:
+                        invalid_results[filename] = result
+
+            count_valid = len(valid_results)
+            count_invalid = len(invalid_results)
 
             print(
                 f"Found {len(units_results)} unit files: {count_valid} valid, {count_invalid} invalid"
@@ -377,10 +407,10 @@ def main():
 
             if count_invalid > 0:
                 print("\nInvalid units:")
-                for filename, result in units_results.items():
-                    if not result["valid"]:
-                        print(f"\n❌ {filename} has validation errors:")
-                        print(result["errors"])
+                for filename, result in invalid_results.items():
+                    print(f"\n❌ {filename} has validation errors:")
+                    error_msg = result.get("errors", "No error details available")
+                    print(error_msg)
                 sys.exit(1)
             else:
                 print("✅ All units are valid")

@@ -1,0 +1,55 @@
+name: Validate Unit Files
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'units/**'
+      - 'schemas/**'
+      - 'utils/validator.py'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'units/**'
+      - 'schemas/**'
+      - 'utils/validator.py'
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  validate:
+    name: Validate Unit Schemas
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install jsonschema
+      
+      - name: Validate unit files
+        id: validate
+        run: |
+          python utils/validator.py --units
+        continue-on-error: true
+        
+      - name: Add validation summary
+        if: always()
+        run: |
+          echo "## Validation Summary" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.validate.outcome }}" == "success" ]; then
+            echo "✅ All unit files are valid" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ Some unit files have validation errors" >> $GITHUB_STEP_SUMMARY
+            echo "Check the job logs for more details" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi 

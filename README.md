@@ -214,6 +214,16 @@ def validate_my_unit(unit_data):
         print("Validation errors:", validator.format_errors(errors))
 ```
 
+### Continuous Integration
+
+This repository includes a GitHub Action that automatically validates all unit files whenever changes are made to the `units/` directory, the schema files, or the validator itself. The workflow will:
+
+1. Run on pushes to the main branch that affect relevant files
+2. Run on pull requests to the main branch that affect relevant files
+3. Can be manually triggered through the GitHub Actions interface
+
+If validation fails, the GitHub Action will report an error, preventing invalid units from being merged into the main branch.
+
 ## Usage
 
 This schema can be used to:
