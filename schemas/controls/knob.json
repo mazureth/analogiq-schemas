@@ -3,8 +3,6 @@
     "type": "object",
     "required": [
         "type",
-        "min",
-        "max",
         "startAngle",
         "endAngle"
     ],
@@ -24,6 +22,47 @@
                 "null"
             ]
         },
+        "steps": {
+            "type": "array",
+            "description": "Array of discrete positions for stepped knobs (takes precedence over min/max/step)",
+            "items": {
+                "oneOf": [
+                    {
+                        "type": [
+                            "string",
+                            "number"
+                        ]
+                    },
+                    {
+                        "type": "object",
+                        "required": [
+                            "value",
+                            "degree"
+                        ],
+                        "properties": {
+                            "value": {
+                                "type": [
+                                    "string",
+                                    "number"
+                                ],
+                                "description": "The parameter value at this step"
+                            },
+                            "degree": {
+                                "type": "number",
+                                "description": "Rotation degree for this step (0-360)",
+                                "minimum": 0,
+                                "maximum": 360
+                            },
+                            "label": {
+                                "type": "string",
+                                "description": "Optional display label for this step"
+                            }
+                        }
+                    }
+                ]
+            },
+            "minItems": 1
+        },
         "startAngle": {
             "type": "number"
         },
@@ -31,7 +70,15 @@
             "type": "number"
         },
         "value": {
-            "type": "number"
+            "type": [
+                "number",
+                "string"
+            ]
+        },
+        "currentStepIndex": {
+            "type": "integer",
+            "description": "Index of the current step in the steps array (only used with steps)",
+            "minimum": 0
         },
         "zIndex": {
             "type": "integer",
@@ -42,5 +89,34 @@
             "format": "uri",
             "description": "URI to the image representing this specific knob's visual appearance"
         }
-    }
+    },
+    "allOf": [
+        {
+            "if": {
+                "required": [
+                    "steps"
+                ]
+            },
+            "then": {
+                "required": [
+                    "currentStepIndex"
+                ]
+            }
+        },
+        {
+            "if": {
+                "not": {
+                    "required": [
+                        "steps"
+                    ]
+                }
+            },
+            "then": {
+                "required": [
+                    "min",
+                    "max"
+                ]
+            }
+        }
+    ]
 }

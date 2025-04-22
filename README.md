@@ -23,7 +23,9 @@ The schema is organized as follows:
 
 ### Knob
 
-Represents a rotary control with a defined angle range and min/max values:
+Represents a rotary control that can be either continuous (with a defined value range) or stepped (with discrete positions):
+
+#### Continuous Knob
 
 ```json
 {
@@ -38,6 +40,47 @@ Represents a rotary control with a defined angle range and min/max values:
   "image": "https://example.com/images/black-knob.png"
 }
 ```
+
+#### Stepped Knob
+
+Stepped knobs can be defined in two ways:
+
+**Simple format** (values only):
+```json
+{
+  "type": "knob",
+  "steps": ["+4", "+10", "GR"],
+  "currentStepIndex": 1,
+  "startAngle": 30,
+  "endAngle": 330,
+  "value": "+10",
+  "zIndex": 1,
+  "image": "https://example.com/images/selector-knob.png"
+}
+```
+
+**Enhanced format** (with precise rotation degrees):
+```json
+{
+  "type": "knob",
+  "steps": [
+    { "value": "+4", "degree": 60, "label": "+4 dB" },
+    { "value": "+10", "degree": 180, "label": "+10 dB" },
+    { "value": "GR", "degree": 300, "label": "Gain Reduction" }
+  ],
+  "currentStepIndex": 1,
+  "startAngle": 30,
+  "endAngle": 330,
+  "value": "+10",
+  "zIndex": 1,
+  "image": "https://example.com/images/selector-knob.png"
+}
+```
+
+The enhanced format provides precise rotational positioning for visual rendering, with each step defining:
+- `value`: The actual parameter value at this step
+- `degree`: The exact rotation in degrees for visual representation
+- `label`: Optional display text for the UI (if different from value)
 
 ### Switch
 

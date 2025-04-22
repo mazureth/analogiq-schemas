@@ -114,6 +114,10 @@ class AnalogGearValidator:
             Tuple of (is_valid, errors)
         """
         try:
+            # Skip validation for index.json
+            if Path(file_path).name == "index.json":
+                return True, []
+
             with open(file_path, "r") as f:
                 unit_data = json.load(f)
 
@@ -198,7 +202,12 @@ class AnalogGearValidator:
         if not self.units_dir.exists():
             return False, {"error": "Units directory not found"}
 
-        unit_files = [f for f in os.listdir(self.units_dir) if f.endswith(".json")]
+        # Exclude index.json from validation
+        unit_files = [
+            f
+            for f in os.listdir(self.units_dir)
+            if f.endswith(".json") and f != "index.json"
+        ]
 
         if not unit_files:
             return True, {"message": "No unit files found in units directory"}

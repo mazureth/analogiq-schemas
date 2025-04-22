@@ -64,16 +64,29 @@
                 "x": 0.8,
                 "y": 0.6
             },
-            "step": [
-                "40",
-                "50",
-                "60"
+            "steps": [
+                {
+                    "value": "+10",
+                    "degree": 60,
+                    "label": "+10 dB"
+                },
+                {
+                    "value": "GR",
+                    "degree": 300,
+                    "label": "Gain Reduction"
+                },
+                {
+                    "value": "+4",
+                    "degree": 180,
+                    "label": "+4 dB"
+                }
             ],
-            "min": 40,
-            "max": 60,
-            "startAngle": 40,
-            "endAngle": 60,
-            "image": "https://example.com/images/la2a/toggle-switch.png"
+            "currentStepIndex": 1,
+            "startAngle": 30,
+            "endAngle": 330,
+            "value": "GR",
+            "zIndex": 1,
+            "image": "https://example.com/images/la2a/selector-knob.png"
         },
         {
             "id": "power",

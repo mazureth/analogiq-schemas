@@ -40,6 +40,10 @@ class IndexGenerator:
 
         for file_path in self.units_dir.glob("*.json"):
             try:
+                # Skip the index.json file itself
+                if file_path.name == "index.json":
+                    continue
+
                 # Check if the filename matches the expected pattern
                 filename_match = self.version_pattern.match(file_path.name)
                 if not filename_match:

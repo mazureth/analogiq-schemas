@@ -14,7 +14,7 @@
             "category": "equalizer",
             "version": "1.0.0",
             "schemaPath": "units/api-560-eq-1.0.0.json",
-            "thumbnailImage": "https://example.com/images/api-560-thumbnail.png"
+            "thumbnailImage": "/assets/thumbnails/api-560-faceplate.jpg"
         }
     ]
 }
