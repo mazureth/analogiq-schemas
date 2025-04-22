@@ -4,8 +4,8 @@
     "version": "1.0.0",
     "category": "compressor",
     "formFactor": "19-inch-rack",
-    "faceplateImage": "https://example.com/images/la2a-faceplate.png",
-    "thumbnailImage": "https://example.com/images/la2a-thumbnail.png",
+    "faceplateImage": "/assets/faceplates/la2a-compressor-1.0.0.jpg",
+    "thumbnailImage": "/assets/thumbnails/la2a-compressor-1.0.0.jpg",
     "width": 1900,
     "height": 525,
     "controls": [
@@ -23,7 +23,7 @@
             "endAngle": 330,
             "value": 40,
             "zIndex": 1,
-            "image": "https://example.com/images/la2a/black-bakelite-knob.png"
+            "image": "/assets/controls/knobs/bakelite-lg-black.jpg"
         },
         {
             "id": "output-gain",
@@ -39,7 +39,7 @@
             "endAngle": 330,
             "value": 50,
             "zIndex": 1,
-            "image": "https://example.com/images/la2a/black-bakelite-knob.png"
+            "image": "/assets/controls/knobs/bakelite-lg-black.jpg"
         },
         {
             "id": "response",
@@ -54,7 +54,7 @@
                 "Compress"
             ],
             "currentIndex": 1,
-            "image": "https://example.com/images/la2a/toggle-switch.png"
+            "image": "/assets/controls/switches/chrome-lg.jpg"
         },
         {
             "id": "meter-selector",
@@ -86,7 +86,7 @@
             "endAngle": 330,
             "value": "GR",
             "zIndex": 1,
-            "image": "https://example.com/images/la2a/selector-knob.png"
+            "image": "/assets/controls/knobs/bakelite-lg-black.jpg"
         },
         {
             "id": "power",
@@ -101,7 +101,7 @@
                 "Off"
             ],
             "currentIndex": 0,
-            "image": "https://example.com/images/la2a/toggle-switch.png"
+            "image": "/assets/controls/switches/chrome-lg.jpg"
         }
     ]
 }

@@ -6,7 +6,7 @@
             "category": "compressor",
             "version": "1.0.0",
             "schemaPath": "units/la2a-compressor-1.0.0.json",
-            "thumbnailImage": "https://example.com/images/la2a-thumbnail.png"
+            "thumbnailImage": "/assets/thumbnails/la2a-compressor-1.0.0.jpg"
         },
         {
             "unitId": "api-560-eq",
