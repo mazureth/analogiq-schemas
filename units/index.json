@@ -6,7 +6,7 @@
             "category": "compressor",
             "version": "1.0.0",
             "schemaPath": "units/la2a-compressor-1.0.0.json",
-            "thumbnailImage": "/assets/thumbnails/la2a-compressor-1.0.0.jpg"
+            "thumbnailImage": "assets/thumbnails/la2a-compressor-1.0.0.jpg"
         },
         {
             "unitId": "api-560-eq",
@@ -14,7 +14,7 @@
             "category": "equalizer",
             "version": "1.0.0",
             "schemaPath": "units/api-560-eq-1.0.0.json",
-            "thumbnailImage": "/assets/thumbnails/api-560-eq-1.0.0.jpg"
+            "thumbnailImage": "assets/thumbnails/api-560-eq-1.0.0.jpg"
         }
     ]
 }
