@@ -40,8 +40,16 @@ jobs:
         id: validate
         run: |
           python utils/validator.py --units
-        continue-on-error: true
-        
+
+      - name: Generate index file
+        if: success()
+        run: |
+          python utils/generate_index.py
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add units/index.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update units index.json [skip ci]"
+            
       - name: Add validation summary
         if: always()
         run: |
