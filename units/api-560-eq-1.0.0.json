@@ -4,8 +4,8 @@
     "version": "1.0.0",
     "category": "equalizer",
     "formFactor": "500-series",
-    "faceplateImage": "/assets/faceplates/api-560-faceplate.jpg",
-    "thumbnailImage": "/assets/thumbnails/api-560-faceplate.jpg",
+    "faceplateImage": "/assets/faceplates/api-560-eq-1.0.0.jpg",
+    "thumbnailImage": "/assets/thumbnails/api-560-eq-1.0.0.jpg",
     "width": 150,
     "height": 525,
     "controls": [
