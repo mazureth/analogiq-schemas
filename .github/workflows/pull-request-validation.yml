@@ -1,0 +1,46 @@
+name: Pull Request Status Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check_required_validation:
+    name: Check Validation Requirements
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Fetch all history to properly check differences
+      
+      - name: Check for modified files
+        id: check_files
+        run: |
+          git fetch origin ${{ github.base_ref }}
+          
+          CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}..HEAD)
+          echo "Changed files:"
+          echo "$CHANGED_FILES"
+          
+          if echo "$CHANGED_FILES" | grep -q -E '^units/|^schemas/|^utils/validator\.py'; then
+            echo "Changes require unit validation"
+            echo "needs_validation=true" >> $GITHUB_OUTPUT
+          else
+            echo "No changes requiring unit validation"
+            echo "needs_validation=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Status update
+        run: |
+          if [ "${{ steps.check_files.outputs.needs_validation }}" == "true" ]; then
+            echo "## Validation Required" >> $GITHUB_STEP_SUMMARY
+            echo "⏳ This PR contains changes to units, schemas, or validator" >> $GITHUB_STEP_SUMMARY
+            echo "The 'Validate Unit Schemas' check will run to validate these changes" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "## Validation Not Required" >> $GITHUB_STEP_SUMMARY
+            echo "✅ No changes to units, schemas, or validator detected" >> $GITHUB_STEP_SUMMARY
+            echo "This PR can proceed without unit validation" >> $GITHUB_STEP_SUMMARY
+          fi 
