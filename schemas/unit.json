@@ -31,6 +31,14 @@
                 "multi-effects"
             ]
         },
+        "formFactor": {
+            "type": "string",
+            "enum": [
+                "500-series",
+                "19-inch-rack",
+                "channel-strip"
+            ]
+        },
         "faceplateImage": {
             "type": "string",
             "format": "uri"

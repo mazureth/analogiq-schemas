@@ -19,6 +19,13 @@
         "currentIndex": {
             "type": "number"
         },
+        "orientation": {
+            "type": "string",
+            "enum": [
+                "horizontal",
+                "vertical"
+            ]
+        },
         "image": {
             "type": "string",
             "format": "uri",
