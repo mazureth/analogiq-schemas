@@ -1,0 +1,63 @@
+#!/bin/bash
+# Pre-commit hook to validate analog gear unit files
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+CYAN='\033[0;36m'
+NC='\033[0m' # No Color
+
+echo -e "${CYAN}Running Analog Gear Schema validator...${NC}"
+
+# Get the repository root directory
+REPO_ROOT=$(git rev-parse --show-toplevel)
+
+# Get list of staged JSON files in the units directory
+STAGED_UNIT_FILES=$(git diff --cached --name-only --diff-filter=ACMR | grep -E '^units/.*\.json$' | grep -v 'units/index.json')
+
+# If no unit files are staged, exit with success
+if [ -z "$STAGED_UNIT_FILES" ]; then
+    echo -e "${GREEN}No unit files staged, skipping validation${NC}"
+    exit 0
+fi
+
+echo -e "${CYAN}Found staged unit files:${NC}"
+echo "$STAGED_UNIT_FILES"
+
+# Run validation on each staged unit file
+VALIDATION_FAILED=0
+
+for file in $STAGED_UNIT_FILES; do
+    echo -e "${CYAN}Validating ${file}...${NC}"
+    python "$REPO_ROOT/utils/validator.py" "$REPO_ROOT/$file"
+    
+    if [ $? -ne 0 ]; then
+        echo -e "${RED}Validation failed for $file${NC}"
+        VALIDATION_FAILED=1
+    else
+        echo -e "${GREEN}Validation passed for $file${NC}"
+    fi
+done
+
+# If any validation failed, exit with error
+if [ $VALIDATION_FAILED -ne 0 ]; then
+    echo -e "${RED}✘ Commit failed: Some unit files did not pass validation${NC}"
+    echo -e "${YELLOW}Please fix the validation errors and try again${NC}"
+    exit 1
+fi
+
+# If we reach here, all validations passed
+echo -e "${GREEN}✓ All staged unit files passed validation${NC}"
+
+# Generate the index.json file if any units were modified
+if [ ! -z "$STAGED_UNIT_FILES" ]; then
+    echo -e "${CYAN}Regenerating units index...${NC}"
+    python "$REPO_ROOT/utils/generate_index.py"
+    
+    # Stage the generated index file
+    git add "$REPO_ROOT/units/index.json"
+    echo -e "${GREEN}✓ Updated units/index.json with latest changes${NC}"
+fi
+
+exit 0 

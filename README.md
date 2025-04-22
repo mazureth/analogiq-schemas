@@ -270,6 +270,20 @@ This repository includes a GitHub Action that automatically validates all unit f
 
 If validation fails, the GitHub Action will report an error, preventing invalid units from being merged into the main branch.
 
+### Git Hooks
+
+This repository includes Git hooks that can be installed locally to help maintain code quality:
+
+- **pre-commit**: Validates unit files before committing and automatically regenerates the units index
+
+To install the hooks, run:
+
+```bash
+./hooks/install.sh
+```
+
+See the [hooks README](hooks/README.md) for more details on how the hooks work and how to install them manually.
+
 ## Usage
 
 This schema can be used to:
