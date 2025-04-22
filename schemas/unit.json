@@ -35,6 +35,11 @@
             "type": "string",
             "format": "uri"
         },
+        "thumbnailImage": {
+            "type": "string",
+            "format": "uri",
+            "description": "Thumbnail image of the unit for use in plugin interfaces"
+        },
         "width": {
             "type": "integer",
             "description": "Width of the drawable space in pixels",
@@ -118,6 +123,7 @@
         "version",
         "category",
         "faceplateImage",
+        "thumbnailImage",
         "width",
         "height",
         "controls"

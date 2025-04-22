@@ -1,0 +1,20 @@
+{
+    "units": [
+        {
+            "unitId": "la2a-compressor",
+            "name": "LA-2A Compressor",
+            "category": "compressor",
+            "version": "1.0.0",
+            "schemaPath": "units/la2a-compressor-1.0.0.json",
+            "thumbnailImage": "https://example.com/images/la2a-thumbnail.png"
+        },
+        {
+            "unitId": "api-560-eq",
+            "name": "API 560 10-Band Graphic Equalizer",
+            "category": "equalizer",
+            "version": "1.0.0",
+            "schemaPath": "units/api-560-eq-1.0.0.json",
+            "thumbnailImage": "https://example.com/images/api-560-thumbnail.png"
+        }
+    ]
+}

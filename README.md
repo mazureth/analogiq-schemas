@@ -13,6 +13,11 @@ The schema is organized as follows:
     - `button.json`: Schema for buttons (on/off)
     - `fader.json`: Schema for linear faders
   - `unit.json`: Main schema that brings all controls together
+- `units/`: Contains actual unit implementations
+  - `index.json`: Contains metadata about all available units
+- `utils/`: Contains utility scripts
+  - `validator.py`: Validates unit files against the schema
+  - `generate_index.py`: Generates the units/index.json file
 
 ## Control Types
 
@@ -80,13 +85,14 @@ Represents a linear control with horizontal or vertical orientation:
 Each control includes an optional `image` property that specifies a URI to the image representing that specific control's visual appearance. This allows for accurate visual representation of different control types across various gear models, as the appearance of knobs, switches, and other controls often varies between different units.
 
 When building a UI with these schemas:
-1. Use the unit's `faceplateImage` as the background
-2. Position each control at its specified coordinates
-3. Use each control's `image` property to render the specific visual appearance of that control
+1. Use the unit's `faceplateImage` as the background for the full view
+2. Use the unit's `thumbnailImage` for smaller representations in plugin interfaces
+3. Position each control at its specified coordinates
+4. Use each control's `image` property to render the specific visual appearance of that control
 
 ## Unit Schema
 
-The `unit.json` schema defines a complete piece of analog gear, including its ID, name, category, version, faceplate image, dimensions, and an array of controls with their positions.
+The `unit.json` schema defines a complete piece of analog gear, including its ID, name, category, version, faceplate image, thumbnail image, dimensions, and an array of controls with their positions.
 
 ```json
 {
@@ -95,6 +101,7 @@ The `unit.json` schema defines a complete piece of analog gear, including its ID
   "version": "1.0.0",
   "category": "compressor",
   "faceplateImage": "https://example.com/images/faceplate.png",
+  "thumbnailImage": "https://example.com/images/thumbnail.png",
   "width": 800,
   "height": 300,
   "controls": [
@@ -153,6 +160,45 @@ For example:
 - `units/api-560-eq-1.0.0.json`
 
 See the [units README](units/README.md) for more information about available units and versioning guidelines.
+
+## Units Index
+
+The repository includes an `index.json` file in the `units/` directory which contains metadata about all available units. This index is automatically generated using the `utils/generate_index.py` script.
+
+The index file makes it easy for applications to:
+- Display a list of all available units
+- Show thumbnails and names without loading the full unit files
+- Filter units by category
+- Access unit files directly via the schema path
+
+Sample index.json structure:
+```json
+{
+  "units": [
+    {
+      "unitId": "la2a-compressor",
+      "name": "LA-2A Compressor",
+      "category": "compressor",
+      "version": "1.0.0",
+      "schemaPath": "units/la2a-compressor-1.0.0.json",
+      "thumbnailImage": "https://example.com/images/la2a-thumbnail.png"
+    },
+    {
+      "unitId": "api-560-eq",
+      "name": "API 560 10-Band Graphic Equalizer",
+      "category": "equalizer",
+      "version": "1.0.0",
+      "schemaPath": "units/api-560-eq-1.0.0.json",
+      "thumbnailImage": "https://example.com/images/api-560-thumbnail.png"
+    }
+  ]
+}
+```
+
+To regenerate the index file after adding or updating units, run:
+```bash
+python utils/generate_index.py
+```
 
 ## Examples
 

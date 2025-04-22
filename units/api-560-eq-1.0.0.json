@@ -4,6 +4,7 @@
     "version": "1.0.0",
     "category": "equalizer",
     "faceplateImage": "https://example.com/images/api-560-faceplate.png",
+    "thumbnailImage": "https://example.com/images/api-560-thumbnail.png",
     "width": 600,
     "height": 350,
     "controls": [

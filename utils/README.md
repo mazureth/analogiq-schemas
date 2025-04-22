@@ -1,6 +1,63 @@
-# Analog Gear Schema Validator
+# Analog Gear Schema Utilities
 
-This directory contains utilities for validating gear schema definitions.
+This directory contains utility scripts for working with the analog gear schema.
+
+## Validator
+
+The `validator.py` script validates unit files against the JSON schema definitions.
+
+### Usage
+
+```bash
+# Validate a single unit file
+python validator.py ../units/la2a-compressor-1.0.0.json
+
+# Run validation tests
+python validator.py --test
+```
+
+## Index Generator
+
+The `generate_index.py` script generates an `index.json` file in the `units/` directory containing metadata about all available unit files. This is useful for applications that need to display or filter the available units without loading each individual file.
+
+### Usage
+
+```bash
+# Generate index.json in the units directory
+python generate_index.py
+```
+
+### Output
+
+The script generates a `units/index.json` file with the following structure:
+
+```json
+{
+  "units": [
+    {
+      "unitId": "la2a-compressor",
+      "name": "LA-2A Compressor",
+      "category": "compressor",
+      "version": "1.0.0",
+      "schemaPath": "units/la2a-compressor-1.0.0.json",
+      "thumbnailImage": "https://example.com/images/la2a-thumbnail.png"
+    },
+    // More units...
+  ]
+}
+```
+
+The generated index includes the following metadata for each unit:
+- `unitId`: The unique identifier for the unit
+- `name`: The human-readable name of the unit
+- `category`: The category of the unit (e.g., "compressor", "equalizer")
+- `version`: The semantic version of the unit
+- `schemaPath`: The relative path to the unit's JSON file
+- `thumbnailImage`: The URL to the unit's thumbnail image
+
+### Integration
+
+You can integrate this utility into your build process or CI/CD pipeline to automatically generate an up-to-date index whenever unit files are added or updated.
 
 ## validator.py
 

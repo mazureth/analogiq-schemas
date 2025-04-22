@@ -4,6 +4,7 @@
     "version": "1.0.0",
     "category": "compressor",
     "faceplateImage": "https://example.com/images/la2a-faceplate.png",
+    "thumbnailImage": "https://example.com/images/la2a-thumbnail.png",
     "width": 800,
     "height": 300,
     "controls": [
