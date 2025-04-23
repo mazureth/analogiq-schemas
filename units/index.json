@@ -3,18 +3,36 @@
         {
             "unitId": "la2a-compressor",
             "name": "LA-2A Compressor",
+            "manufacturer": "Teletronix/Universal Audio",
             "category": "compressor",
             "version": "1.0.0",
             "schemaPath": "units/la2a-compressor-1.0.0.json",
-            "thumbnailImage": "assets/thumbnails/la2a-compressor-1.0.0.jpg"
+            "thumbnailImage": "assets/thumbnails/la2a-compressor-1.0.0.jpg",
+            "tags": [
+                "UA",
+                "Universal Audio",
+                "Teletronix",
+                "optical",
+                "tube",
+                "vintage",
+                "leveling amplifier"
+            ]
         },
         {
             "unitId": "api-560-eq",
             "name": "API 560 10-Band Graphic Equalizer",
+            "manufacturer": "Automated Processes Inc.",
             "category": "equalizer",
             "version": "1.0.0",
             "schemaPath": "units/api-560-eq-1.0.0.json",
-            "thumbnailImage": "assets/thumbnails/api-560-eq-1.0.0.jpg"
+            "thumbnailImage": "assets/thumbnails/api-560-eq-1.0.0.jpg",
+            "tags": [
+                "API",
+                "500 series",
+                "graphic EQ",
+                "10-band",
+                "hardware"
+            ]
         }
     ]
 }

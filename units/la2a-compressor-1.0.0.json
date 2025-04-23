@@ -1,6 +1,16 @@
 {
     "unitId": "la2a-compressor",
     "name": "LA-2A Compressor",
+    "manufacturer": "Teletronix/Universal Audio",
+    "tags": [
+        "UA",
+        "Universal Audio",
+        "Teletronix",
+        "optical",
+        "tube",
+        "vintage",
+        "leveling amplifier"
+    ],
     "version": "1.0.0",
     "category": "compressor",
     "formFactor": "19-inch-rack",
