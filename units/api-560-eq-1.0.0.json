@@ -1,6 +1,14 @@
 {
     "unitId": "api-560-eq",
     "name": "API 560 10-Band Graphic Equalizer",
+    "manufacturer": "Automated Processes Inc.",
+    "tags": [
+        "API",
+        "500 series",
+        "graphic EQ",
+        "10-band",
+        "hardware"
+    ],
     "version": "1.0.0",
     "category": "equalizer",
     "formFactor": "500-series",

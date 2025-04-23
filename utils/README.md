@@ -37,6 +37,8 @@ The script generates a `units/index.json` file with the following structure:
     {
       "unitId": "la2a-compressor",
       "name": "LA-2A Compressor",
+      "manufacturer": "Teletronix/Universal Audio",
+      "tags": ["UA", "Universal Audio", "Teletronix", "optical", "tube", "vintage"],
       "category": "compressor",
       "version": "1.0.0",
       "schemaPath": "units/la2a-compressor-1.0.0.json",
@@ -50,6 +52,8 @@ The script generates a `units/index.json` file with the following structure:
 The generated index includes the following metadata for each unit:
 - `unitId`: The unique identifier for the unit
 - `name`: The human-readable name of the unit
+- `manufacturer`: The company that manufactured the unit
+- `tags`: Array of additional searchable tags (optional)
 - `category`: The category of the unit (e.g., "compressor", "equalizer")
 - `version`: The semantic version of the unit
 - `schemaPath`: The relative path to the unit's JSON file
@@ -105,9 +109,12 @@ is_valid, errors = validator.validate_unit_file('path/to/unit.json')
 unit_data = {
     "unitId": "my-unit",
     "name": "My Unit",
+    "manufacturer": "My Audio Company",
+    "tags": ["custom", "example", "demo"],
     "version": "1.0.0",
     "category": "compressor",
     "faceplateImage": "https://example.com/my-unit.png",
+    "thumbnailImage": "https://example.com/my-unit-thumbnail.png",
     "width": 800,
     "height": 300,
     "controls": [

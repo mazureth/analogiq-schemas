@@ -60,11 +60,16 @@ class IndexGenerator:
                 unit_info = {
                     "unitId": unit_data.get("unitId"),
                     "name": unit_data.get("name"),
+                    "manufacturer": unit_data.get("manufacturer"),
                     "category": unit_data.get("category"),
                     "version": unit_data.get("version"),
                     "schemaPath": str(file_path.relative_to(self.root_dir)),
                     "thumbnailImage": unit_data.get("thumbnailImage"),
                 }
+
+                # Add optional tags if available
+                if "tags" in unit_data:
+                    unit_info["tags"] = unit_data["tags"]
 
                 # Validate that we have all required fields
                 if not all(unit_info.values()):

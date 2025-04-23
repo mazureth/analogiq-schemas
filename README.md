@@ -135,12 +135,14 @@ When building a UI with these schemas:
 
 ## Unit Schema
 
-The `unit.json` schema defines a complete piece of analog gear, including its ID, name, category, version, faceplate image, thumbnail image, dimensions, and an array of controls with their positions.
+The `unit.json` schema defines a complete piece of analog gear, including its ID, name, manufacturer, category, version, faceplate image, thumbnail image, dimensions, and an array of controls with their positions.
 
 ```json
 {
   "unitId": "example-unit",
   "name": "Example Unit",
+  "manufacturer": "Example Audio Company",
+  "tags": ["example", "demo", "test"],
   "version": "1.0.0",
   "category": "compressor",
   "faceplateImage": "https://example.com/images/faceplate.png",
@@ -221,6 +223,8 @@ Sample index.json structure:
     {
       "unitId": "la2a-compressor",
       "name": "LA-2A Compressor",
+      "manufacturer": "Teletronix/Universal Audio",
+      "tags": ["UA", "Universal Audio", "Teletronix", "optical", "tube", "vintage"],
       "category": "compressor",
       "version": "1.0.0",
       "schemaPath": "units/la2a-compressor-1.0.0.json",
@@ -229,6 +233,8 @@ Sample index.json structure:
     {
       "unitId": "api-560-eq",
       "name": "API 560 10-Band Graphic Equalizer",
+      "manufacturer": "Automated Processes Inc.",
+      "tags": ["API", "500 series", "graphic EQ", "10-band"],
       "category": "equalizer",
       "version": "1.0.0",
       "schemaPath": "units/api-560-eq-1.0.0.json",
