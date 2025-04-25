@@ -3,23 +3,22 @@
     "type": "object",
     "required": [
         "type",
-        "min",
-        "max",
         "value",
-        "orientation"
+        "orientation",
+        "length"
     ],
     "properties": {
         "type": {
             "const": "fader"
         },
-        "min": {
-            "type": "number"
-        },
-        "max": {
-            "type": "number"
-        },
         "value": {
-            "type": "number"
+            "type": "number",
+            "description": "Current position of the fader in pixels along the track"
+        },
+        "length": {
+            "type": "integer",
+            "description": "Length of the fader in pixels",
+            "minimum": 1
         },
         "orientation": {
             "type": "string",

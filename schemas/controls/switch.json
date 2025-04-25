@@ -13,7 +13,52 @@
         "options": {
             "type": "array",
             "items": {
-                "type": "string"
+                "type": "object",
+                "required": [
+                    "value",
+                    "frame"
+                ],
+                "properties": {
+                    "value": {
+                        "type": "string",
+                        "description": "The option value"
+                    },
+                    "frame": {
+                        "type": "object",
+                        "required": [
+                            "x",
+                            "y",
+                            "width",
+                            "height"
+                        ],
+                        "properties": {
+                            "x": {
+                                "type": "integer",
+                                "description": "X position of the sprite frame",
+                                "minimum": 0
+                            },
+                            "y": {
+                                "type": "integer",
+                                "description": "Y position of the sprite frame",
+                                "minimum": 0
+                            },
+                            "width": {
+                                "type": "integer",
+                                "description": "Width of the sprite frame",
+                                "minimum": 1
+                            },
+                            "height": {
+                                "type": "integer",
+                                "description": "Height of the sprite frame",
+                                "minimum": 1
+                            }
+                        }
+                    },
+                    "label": {
+                        "type": "string",
+                        "description": "Optional display label for this option"
+                    }
+                }
             }
         },
         "currentIndex": {
@@ -29,7 +74,7 @@
         "image": {
             "type": "string",
             "format": "uri",
-            "description": "URI to the image representing this specific switch's visual appearance"
+            "description": "URI to the sprite sheet image containing all switch position visuals"
         }
     }
 }

@@ -84,16 +84,54 @@ The enhanced format provides precise rotational positioning for visual rendering
 
 ### Switch
 
-Represents a multi-position switch with named options:
+Represents a multi-position switch that uses sprite frames for visual representation:
 
 ```json
 {
   "type": "switch",
-  "options": ["Option 1", "Option 2", "Option 3"],
+  "options": [
+    {
+      "value": "Option 1",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 60,
+        "height": 60
+      },
+      "label": "First Option"
+    },
+    {
+      "value": "Option 2",
+      "frame": {
+        "x": 0,
+        "y": 60,
+        "width": 60,
+        "height": 60
+      },
+      "label": "Second Option"
+    },
+    {
+      "value": "Option 3",
+      "frame": {
+        "x": 0,
+        "y": 120,
+        "width": 60,
+        "height": 60
+      },
+      "label": "Third Option"
+    }
+  ],
   "currentIndex": 1,
-  "image": "https://example.com/images/toggle-switch.png"
+  "image": "https://example.com/images/switch-sprite.png"
 }
 ```
+
+Each option defines:
+- `value`: The actual parameter value for this position
+- `frame`: The position and dimensions of this switch position in the sprite sheet
+- `label`: Optional display text for the UI (if different from value)
+
+The `image` property points to a sprite sheet containing all the switch position visuals.
 
 ### Button
 
@@ -115,13 +153,18 @@ Represents a linear control with horizontal or vertical orientation:
 ```json
 {
   "type": "fader",
-  "min": -12,
-  "max": 12,
-  "value": 0,
+  "value": 50,
+  "length": 100,
   "orientation": "vertical",
   "image": "https://example.com/images/slider.png"
 }
 ```
+
+The fader control includes:
+- `value`: The current position in pixels along the track (0 to length)
+- `length`: The total length of the fader track in pixels
+- `orientation`: Whether the fader is "horizontal" or "vertical"
+- `image`: URI to the image representing the fader handle
 
 ## Visual Representation
 
