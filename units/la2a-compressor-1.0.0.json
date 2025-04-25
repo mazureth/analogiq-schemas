@@ -33,7 +33,7 @@
             "endAngle": 330,
             "value": 40,
             "zIndex": 1,
-            "image": "assets/controls/knobs/bakelite-lg-black.jpg"
+            "image": "assets/controls/knobs/bakelite-lg-black.png"
         },
         {
             "id": "output-gain",
@@ -49,7 +49,7 @@
             "endAngle": 330,
             "value": 50,
             "zIndex": 1,
-            "image": "assets/controls/knobs/bakelite-lg-black.jpg"
+            "image": "assets/controls/knobs/bakelite-lg-black.png"
         },
         {
             "id": "response",
@@ -60,11 +60,29 @@
                 "y": 0.3
             },
             "options": [
-                "Limit",
-                "Compress"
+                {
+                    "value": "Limit",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 128,
+                        "height": 128
+                    },
+                    "label": "Limit"
+                },
+                {
+                    "value": "Compress",
+                    "frame": {
+                        "x": 0,
+                        "y": 512,
+                        "width": 128,
+                        "height": 128
+                    },
+                    "label": "Compress"
+                }
             ],
             "currentIndex": 1,
-            "image": "assets/controls/switches/chrome-lg.jpg"
+            "image": "assets/controls/switches/chrome-lg-sprite.png"
         },
         {
             "id": "meter-selector",
@@ -96,7 +114,7 @@
             "endAngle": 330,
             "value": "GR",
             "zIndex": 1,
-            "image": "assets/controls/knobs/bakelite-lg-black.jpg"
+            "image": "assets/controls/knobs/bakelite-lg-black.png"
         },
         {
             "id": "power",
@@ -107,11 +125,29 @@
                 "y": 0.8
             },
             "options": [
-                "On",
-                "Off"
+                {
+                    "value": "On",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 128,
+                        "height": 128
+                    },
+                    "label": "On"
+                },
+                {
+                    "value": "Off",
+                    "frame": {
+                        "x": 0,
+                        "y": 512,
+                        "width": 128,
+                        "height": 128
+                    },
+                    "label": "Off"
+                }
             ],
             "currentIndex": 0,
-            "image": "assets/controls/switches/chrome-lg.jpg"
+            "image": "assets/controls/switches/chrome-lg-sprite.png"
         }
     ]
 }

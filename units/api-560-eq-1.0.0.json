@@ -25,11 +25,10 @@
                 "x": 0.1,
                 "y": 0.5
             },
-            "min": -12,
-            "max": 12,
-            "value": 0,
+            "value": 50,
+            "length": 100,
             "orientation": "horizontal",
-            "image": "assets/controls/faders/slider-sm-white.jpg"
+            "image": "assets/controls/faders/slider-sm-white.png"
         },
         {
             "id": "63hz",
@@ -39,11 +38,10 @@
                 "x": 0.2,
                 "y": 0.5
             },
-            "min": -12,
-            "max": 12,
-            "value": 0,
+            "value": 50,
+            "length": 100,
             "orientation": "horizontal",
-            "image": "assets/controls/faders/slider-sm-white.jpg"
+            "image": "assets/controls/faders/slider-sm-white.png"
         },
         {
             "id": "125hz",
@@ -53,11 +51,10 @@
                 "x": 0.3,
                 "y": 0.5
             },
-            "min": -12,
-            "max": 12,
-            "value": 0,
+            "value": 50,
+            "length": 100,
             "orientation": "horizontal",
-            "image": "assets/controls/faders/slider-sm-white.jpg"
+            "image": "assets/controls/faders/slider-sm-white.png"
         },
         {
             "id": "250hz",
@@ -67,11 +64,10 @@
                 "x": 0.4,
                 "y": 0.5
             },
-            "min": -12,
-            "max": 12,
-            "value": 0,
+            "value": 50,
+            "length": 100,
             "orientation": "horizontal",
-            "image": "assets/controls/faders/slider-sm-white.jpg"
+            "image": "assets/controls/faders/slider-sm-white.png"
         },
         {
             "id": "500hz",
@@ -81,11 +77,10 @@
                 "x": 0.5,
                 "y": 0.5
             },
-            "min": -12,
-            "max": 12,
-            "value": 0,
+            "value": 50,
+            "length": 100,
             "orientation": "horizontal",
-            "image": "assets/controls/faders/slider-sm-white.jpg"
+            "image": "assets/controls/faders/slider-sm-white.png"
         },
         {
             "id": "1khz",
@@ -95,11 +90,10 @@
                 "x": 0.6,
                 "y": 0.5
             },
-            "min": -12,
-            "max": 12,
-            "value": 0,
+            "value": 50,
+            "length": 100,
             "orientation": "horizontal",
-            "image": "assets/controls/faders/slider-sm-red.jpg"
+            "image": "assets/controls/faders/slider-sm-red.png"
         },
         {
             "id": "2khz",
@@ -109,11 +103,10 @@
                 "x": 0.7,
                 "y": 0.5
             },
-            "min": -12,
-            "max": 12,
-            "value": 0,
+            "value": 50,
+            "length": 100,
             "orientation": "horizontal",
-            "image": "assets/controls/faders/slider-sm-white.jpg"
+            "image": "assets/controls/faders/slider-sm-white.png"
         },
         {
             "id": "4khz",
@@ -123,11 +116,10 @@
                 "x": 0.8,
                 "y": 0.5
             },
-            "min": -12,
-            "max": 12,
-            "value": 0,
+            "value": 50,
+            "length": 100,
             "orientation": "horizontal",
-            "image": "assets/controls/faders/slider-sm-white.jpg"
+            "image": "assets/controls/faders/slider-sm-white.png"
         },
         {
             "id": "8khz",
@@ -137,11 +129,10 @@
                 "x": 0.85,
                 "y": 0.5
             },
-            "min": -12,
-            "max": 12,
-            "value": 0,
+            "value": 50,
+            "length": 100,
             "orientation": "horizontal",
-            "image": "assets/controls/faders/slider-sm-white.jpg"
+            "image": "assets/controls/faders/slider-sm-white.png"
         },
         {
             "id": "16khz",
@@ -151,11 +142,10 @@
                 "x": 0.9,
                 "y": 0.5
             },
-            "min": -12,
-            "max": 12,
-            "value": 0,
+            "value": 50,
+            "length": 100,
             "orientation": "horizontal",
-            "image": "assets/controls/faders/slider-sm-white.jpg"
+            "image": "assets/controls/faders/slider-sm-white.png"
         },
         {
             "id": "eq-in",
@@ -167,7 +157,7 @@
             },
             "momentary": false,
             "state": true,
-            "image": "assets/controls/buttons/white-opaque.jpg"
+            "image": "assets/controls/buttons/white-opaque.png"
         }
     ]
 }
