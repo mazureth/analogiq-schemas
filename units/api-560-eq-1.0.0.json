@@ -157,7 +157,13 @@
             },
             "momentary": false,
             "state": true,
-            "image": "assets/controls/buttons/white-opaque.png"
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "width": 32,
+                "height": 32
+            },
+            "image": "assets/controls/buttons/button-sm-white.png"
         }
     ]
 }

@@ -116,7 +116,8 @@
                     },
                     "image": {
                         "type": "string",
-                        "format": "uri"
+                        "format": "uri",
+                        "description": "URI to the sprite sheet image containing all control states (e.g., pressed/released for buttons, on/off for switches)"
                     }
                 },
                 "oneOf": [
