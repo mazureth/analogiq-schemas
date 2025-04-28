@@ -4,22 +4,56 @@
     "required": [
         "type",
         "momentary",
-        "state"
+        "state",
+        "frame"
     ],
     "properties": {
         "type": {
             "const": "button"
         },
         "momentary": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "Whether the button is momentary (returns to off state when released) or latching (stays in pressed state)"
         },
         "state": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "Current state of the button (true = pressed, false = released)"
+        },
+        "frame": {
+            "type": "object",
+            "required": [
+                "x",
+                "y",
+                "width",
+                "height"
+            ],
+            "properties": {
+                "x": {
+                    "type": "integer",
+                    "description": "X position of the button sprite frame",
+                    "minimum": 0
+                },
+                "y": {
+                    "type": "integer",
+                    "description": "Y position of the button sprite frame",
+                    "minimum": 0
+                },
+                "width": {
+                    "type": "integer",
+                    "description": "Width of the button sprite frame",
+                    "minimum": 1
+                },
+                "height": {
+                    "type": "integer",
+                    "description": "Height of the button sprite frame",
+                    "minimum": 1
+                }
+            }
         },
         "image": {
             "type": "string",
             "format": "uri",
-            "description": "URI to the image representing this specific button's visual appearance"
+            "description": "URI to the sprite sheet image containing both button states (pressed and released)"
         }
     }
 }
