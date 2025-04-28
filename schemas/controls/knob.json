@@ -3,91 +3,46 @@
     "type": "object",
     "required": [
         "type",
+        "value",
         "startAngle",
-        "endAngle"
+        "endAngle",
+        "image"
     ],
     "properties": {
         "type": {
             "const": "knob"
         },
-        "min": {
-            "type": "number"
+        "value": {
+            "type": "number",
+            "description": "Current value of the knob, mapped to the angle range"
         },
-        "max": {
-            "type": "number"
+        "startAngle": {
+            "type": "number",
+            "description": "Starting angle in degrees (0-360) where the knob begins its range"
         },
-        "step": {
-            "type": [
-                "number",
-                "null"
-            ]
+        "endAngle": {
+            "type": "number",
+            "description": "Ending angle in degrees (0-360) where the knob ends its range"
         },
         "steps": {
             "type": "array",
-            "description": "Array of discrete positions for stepped knobs (takes precedence over min/max/step)",
+            "description": "Array of rotation degrees (0-360) for stepped knobs",
             "items": {
-                "oneOf": [
-                    {
-                        "type": [
-                            "string",
-                            "number"
-                        ]
-                    },
-                    {
-                        "type": "object",
-                        "required": [
-                            "value",
-                            "degree"
-                        ],
-                        "properties": {
-                            "value": {
-                                "type": [
-                                    "string",
-                                    "number"
-                                ],
-                                "description": "The parameter value at this step"
-                            },
-                            "degree": {
-                                "type": "number",
-                                "description": "Rotation degree for this step (0-360)",
-                                "minimum": 0,
-                                "maximum": 360
-                            },
-                            "label": {
-                                "type": "string",
-                                "description": "Optional display label for this step"
-                            }
-                        }
-                    }
-                ]
+                "type": "number",
+                "minimum": 0,
+                "maximum": 360
             },
             "minItems": 1
-        },
-        "startAngle": {
-            "type": "number"
-        },
-        "endAngle": {
-            "type": "number"
-        },
-        "value": {
-            "type": [
-                "number",
-                "string"
-            ]
         },
         "currentStepIndex": {
             "type": "integer",
             "description": "Index of the current step in the steps array (only used with steps)",
             "minimum": 0
         },
-        "zIndex": {
-            "type": "integer",
-            "default": 0
-        },
         "image": {
             "type": "string",
             "format": "uri",
-            "description": "URI to the image representing this specific knob's visual appearance"
+            "description": "URI to the knob image"
         }
     },
     "allOf": [
@@ -100,21 +55,6 @@
             "then": {
                 "required": [
                     "currentStepIndex"
-                ]
-            }
-        },
-        {
-            "if": {
-                "not": {
-                    "required": [
-                        "steps"
-                    ]
-                }
-            },
-            "then": {
-                "required": [
-                    "min",
-                    "max"
                 ]
             }
         }
