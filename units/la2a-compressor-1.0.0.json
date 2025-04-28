@@ -1,15 +1,13 @@
 {
     "unitId": "la2a-compressor",
-    "name": "LA-2A Compressor",
-    "manufacturer": "Teletronix/Universal Audio",
+    "name": "LA-2A Tube Compressor",
+    "manufacturer": "Universal Audio",
     "tags": [
-        "UA",
-        "Universal Audio",
-        "Teletronix",
-        "optical",
+        "compressor",
         "tube",
+        "optical",
         "vintage",
-        "leveling amplifier"
+        "hardware"
     ],
     "version": "1.0.0",
     "category": "compressor",
@@ -24,40 +22,53 @@
             "label": "Gain Reduction",
             "type": "knob",
             "position": {
-                "x": 0.2,
-                "y": 0.3
+                "x": 0.1,
+                "y": 0.5
             },
-            "min": 0,
-            "max": 100,
-            "startAngle": 30,
-            "endAngle": 330,
-            "value": 40,
-            "zIndex": 1,
-            "image": "assets/controls/knobs/bakelite-lg-black.png"
+            "value": 180,
+            "startAngle": 160,
+            "endAngle": 200,
+            "steps": [
+                160,
+                180,
+                200
+            ],
+            "currentStepIndex": 1,
+            "image": "assets/controls/knobs/knob-sm-black.png"
         },
         {
-            "id": "output-gain",
-            "label": "Output Gain",
+            "id": "peak-reduction",
+            "label": "Peak Reduction",
             "type": "knob",
             "position": {
-                "x": 0.5,
-                "y": 0.3
+                "x": 0.2,
+                "y": 0.5
             },
-            "min": 0,
-            "max": 100,
+            "value": 180,
             "startAngle": 30,
             "endAngle": 330,
-            "value": 50,
-            "zIndex": 1,
-            "image": "assets/controls/knobs/bakelite-lg-black.png"
+            "image": "assets/controls/knobs/knob-sm-black.png"
         },
         {
-            "id": "response",
-            "label": "Response",
+            "id": "gain",
+            "label": "Gain",
+            "type": "knob",
+            "position": {
+                "x": 0.3,
+                "y": 0.5
+            },
+            "value": 180,
+            "startAngle": 30,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/knob-sm-black.png"
+        },
+        {
+            "id": "comp-lim",
+            "label": "Comp/Lim",
             "type": "switch",
             "position": {
-                "x": 0.8,
-                "y": 0.3
+                "x": 0.4,
+                "y": 0.5
             },
             "options": [
                 {
@@ -82,47 +93,15 @@
                 }
             ],
             "currentIndex": 1,
-            "image": "assets/controls/switches/chrome-lg-sprite.png"
-        },
-        {
-            "id": "meter-selector",
-            "label": "Meter",
-            "type": "knob",
-            "position": {
-                "x": 0.8,
-                "y": 0.6
-            },
-            "steps": [
-                {
-                    "value": "+10",
-                    "degree": 60,
-                    "label": "+10 dB"
-                },
-                {
-                    "value": "GR",
-                    "degree": 300,
-                    "label": "Gain Reduction"
-                },
-                {
-                    "value": "+4",
-                    "degree": 180,
-                    "label": "+4 dB"
-                }
-            ],
-            "currentStepIndex": 1,
-            "startAngle": 30,
-            "endAngle": 330,
-            "value": "GR",
-            "zIndex": 1,
-            "image": "assets/controls/knobs/bakelite-lg-black.png"
+            "image": "assets/controls/switches/switch-sm-black.png"
         },
         {
             "id": "power",
             "label": "Power",
             "type": "switch",
             "position": {
-                "x": 0.9,
-                "y": 0.8
+                "x": 0.6,
+                "y": 0.5
             },
             "options": [
                 {
@@ -147,7 +126,7 @@
                 }
             ],
             "currentIndex": 0,
-            "image": "assets/controls/switches/chrome-lg-sprite.png"
+            "image": "assets/controls/switches/switch-sm-red.png"
         }
     ]
 }

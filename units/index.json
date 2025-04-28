@@ -2,20 +2,18 @@
     "units": [
         {
             "unitId": "la2a-compressor",
-            "name": "LA-2A Compressor",
-            "manufacturer": "Teletronix/Universal Audio",
+            "name": "LA-2A Tube Compressor",
+            "manufacturer": "Universal Audio",
             "category": "compressor",
             "version": "1.0.0",
             "schemaPath": "units/la2a-compressor-1.0.0.json",
             "thumbnailImage": "assets/thumbnails/la2a-compressor-1.0.0.jpg",
             "tags": [
-                "UA",
-                "Universal Audio",
-                "Teletronix",
-                "optical",
+                "compressor",
                 "tube",
+                "optical",
                 "vintage",
-                "leveling amplifier"
+                "hardware"
             ]
         },
         {
