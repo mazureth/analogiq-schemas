@@ -93,6 +93,7 @@
                 }
             ],
             "currentIndex": 1,
+            "orientation": "vertical",
             "image": "assets/controls/switches/switch-sm-black.png"
         },
         {
@@ -126,6 +127,7 @@
                 }
             ],
             "currentIndex": 0,
+            "orientation": "vertical",
             "image": "assets/controls/switches/switch-sm-red.png"
         }
     ]
