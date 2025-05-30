@@ -60,7 +60,7 @@
             "value": 180,
             "startAngle": 30,
             "endAngle": 330,
-            "image": "assets/controls/knobs/bakelite-lg-black.png.png"
+            "image": "assets/controls/knobs/bakelite-lg-black.png"
         },
         {
             "id": "comp-lim",
