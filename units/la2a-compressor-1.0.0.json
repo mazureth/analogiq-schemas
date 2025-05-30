@@ -34,7 +34,7 @@
                 200
             ],
             "currentStepIndex": 1,
-            "image": "assets/controls/knobs/knob-sm-black.png"
+            "image": "assets/controls/knobs/bakelite-lg-black.png"
         },
         {
             "id": "peak-reduction",
@@ -47,7 +47,7 @@
             "value": 180,
             "startAngle": 30,
             "endAngle": 330,
-            "image": "assets/controls/knobs/knob-sm-black.png"
+            "image": "assets/controls/knobs/bakelite-lg-black.png"
         },
         {
             "id": "gain",
@@ -60,7 +60,7 @@
             "value": 180,
             "startAngle": 30,
             "endAngle": 330,
-            "image": "assets/controls/knobs/knob-sm-black.png"
+            "image": "assets/controls/knobs/bakelite-lg-black.png.png"
         },
         {
             "id": "comp-lim",
@@ -94,7 +94,7 @@
             ],
             "currentIndex": 1,
             "orientation": "vertical",
-            "image": "assets/controls/switches/switch-sm-black.png"
+            "image": "assets/controls/switches/chrome-lg-sprite.png"
         },
         {
             "id": "power",
@@ -128,7 +128,7 @@
             ],
             "currentIndex": 0,
             "orientation": "vertical",
-            "image": "assets/controls/switches/switch-sm-red.png"
+            "image": "assets/controls/switches/chrome-lg-sprite.png"
         }
     ]
 }
