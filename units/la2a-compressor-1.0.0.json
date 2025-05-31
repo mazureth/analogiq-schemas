@@ -22,7 +22,7 @@
             "label": "Gain Reduction",
             "type": "knob",
             "position": {
-                "x": 0.87,
+                "x": 0.90,
                 "y": 0.27
             },
             "value": 180,
