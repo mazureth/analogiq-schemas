@@ -22,16 +22,16 @@
             "label": "Gain Reduction",
             "type": "knob",
             "position": {
-                "x": 0.9,
-                "y": 0.25
+                "x": 0.813,
+                "y": 0.22
             },
             "value": 180,
-            "startAngle": 160,
-            "endAngle": 200,
+            "startAngle": 140,
+            "endAngle": 220,
             "steps": [
-                160,
+                140,
                 180,
-                200
+                220
             ],
             "currentStepIndex": 1,
             "image": "assets/controls/knobs/bakelite-lg-black.png"
@@ -41,12 +41,12 @@
             "label": "Peak Reduction",
             "type": "knob",
             "position": {
-                "x": 0.6,
-                "y": 0.4
+                "x": 0.68,
+                "y": 0.44
             },
             "value": 180,
-            "startAngle": 30,
-            "endAngle": 330,
+            "startAngle": 40,
+            "endAngle": 322,
             "image": "assets/controls/knobs/bakelite-lg-black.png"
         },
         {
@@ -54,12 +54,12 @@
             "label": "Gain",
             "type": "knob",
             "position": {
-                "x": 0.2,
-                "y": 0.4
+                "x": 0.257,
+                "y": 0.44
             },
             "value": 180,
-            "startAngle": 30,
-            "endAngle": 330,
+            "startAngle": 40,
+            "endAngle": 322,
             "image": "assets/controls/knobs/bakelite-lg-black.png"
         },
         {
