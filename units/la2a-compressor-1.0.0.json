@@ -22,8 +22,8 @@
             "label": "Gain Reduction",
             "type": "knob",
             "position": {
-                "x": 0.85,
-                "y": 0.25
+                "x": 0.87,
+                "y": 0.27
             },
             "value": 180,
             "startAngle": 160,
