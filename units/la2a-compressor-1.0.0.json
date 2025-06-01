@@ -72,24 +72,24 @@
             },
             "options": [
                 {
-                    "value": "Limit",
+                    "value": "Compress",
                     "frame": {
                         "x": 0,
                         "y": 0,
                         "width": 128,
                         "height": 156
                     },
-                    "label": "Limit"
+                    "label": "Compress"
                 },
                 {
-                    "value": "Compress",
+                    "value": "Limit",
                     "frame": {
                         "x": 128,
                         "y": 0,
                         "width": 128,
                         "height": 156
                     },
-                    "label": "Compress"
+                    "label": "Limit"
                 }
             ],
             "currentIndex": 1,
@@ -108,7 +108,7 @@
                 {
                     "value": "On",
                     "frame": {
-                        "x": 0,
+                        "x": 128,
                         "y": 0,
                         "width": 128,
                         "height": 156
@@ -118,7 +118,7 @@
                 {
                     "value": "Off",
                     "frame": {
-                        "x": 128,
+                        "x": 0,
                         "y": 0,
                         "width": 128,
                         "height": 156
