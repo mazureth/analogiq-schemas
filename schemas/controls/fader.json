@@ -42,7 +42,7 @@
         },
         "value": {
             "type": "number",
-            "description": "Current position of the fader in pixels along the track"
+            "description": "Current position of the fader in percentage (0.0 - 1.0) along the track"
         },
         "length": {
             "type": "integer",
@@ -59,7 +59,7 @@
         "image": {
             "type": "string",
             "format": "uri",
-            "description": "URI to the image representing this specific fader's visual appearance"
+            "description": "URI to the image representing this specific fader's handle"
         }
     }
 }
