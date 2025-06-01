@@ -67,8 +67,8 @@
             "label": "Comp/Lim",
             "type": "switch",
             "position": {
-                "x": 0.4,
-                "y": 0.5
+                "x": 0.086,
+                "y": 0.57
             },
             "options": [
                 {
@@ -77,17 +77,17 @@
                         "x": 0,
                         "y": 0,
                         "width": 128,
-                        "height": 128
+                        "height": 156
                     },
                     "label": "Limit"
                 },
                 {
                     "value": "Compress",
                     "frame": {
-                        "x": 0,
-                        "y": 128,
+                        "x": 128,
+                        "y": 0,
                         "width": 128,
-                        "height": 128
+                        "height": 156
                     },
                     "label": "Compress"
                 }
@@ -101,8 +101,8 @@
             "label": "Power",
             "type": "switch",
             "position": {
-                "x": 0.6,
-                "y": 0.5
+                "x": 0.826,
+                "y": 0.57
             },
             "options": [
                 {
@@ -111,17 +111,17 @@
                         "x": 0,
                         "y": 0,
                         "width": 128,
-                        "height": 128
+                        "height": 156
                     },
                     "label": "On"
                 },
                 {
                     "value": "Off",
                     "frame": {
-                        "x": 0,
-                        "y": 128,
+                        "x": 128,
+                        "y": 0,
                         "width": 128,
-                        "height": 128
+                        "height": 156
                     },
                     "label": "Off"
                 }
