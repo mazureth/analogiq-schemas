@@ -8,7 +8,8 @@
         "position",
         "momentary",
         "state",
-        "frame"
+        "options",
+        "image"
     ],
     "properties": {
         "id": {
@@ -44,38 +45,59 @@
             "type": "boolean",
             "description": "Whether the button is momentary (returns to off state when released) or latching (stays in pressed state)"
         },
-        "state": {
-            "type": "boolean",
-            "description": "Current state of the button (true = pressed, false = released)"
+        "value": {
+            "type": "number",
+            "description": "The index of the current selected button option (0-based)",
+            "minimum": 0
         },
-        "frame": {
-            "type": "object",
-            "required": [
-                "x",
-                "y",
-                "width",
-                "height"
-            ],
-            "properties": {
-                "x": {
-                    "type": "integer",
-                    "description": "X position of the button sprite frame",
-                    "minimum": 0
-                },
-                "y": {
-                    "type": "integer",
-                    "description": "Y position of the button sprite frame",
-                    "minimum": 0
-                },
-                "width": {
-                    "type": "integer",
-                    "description": "Width of the button sprite frame",
-                    "minimum": 1
-                },
-                "height": {
-                    "type": "integer",
-                    "description": "Height of the button sprite frame",
-                    "minimum": 1
+        "options": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "value",
+                    "frame"
+                ],
+                "properties": {
+                    "value": {
+                        "type": "string",
+                        "description": "The option value"
+                    },
+                    "frame": {
+                        "type": "object",
+                        "required": [
+                            "x",
+                            "y",
+                            "width",
+                            "height"
+                        ],
+                        "properties": {
+                            "x": {
+                                "type": "integer",
+                                "description": "X position of the sprite frame",
+                                "minimum": 0
+                            },
+                            "y": {
+                                "type": "integer",
+                                "description": "Y position of the sprite frame",
+                                "minimum": 0
+                            },
+                            "width": {
+                                "type": "integer",
+                                "description": "Width of the sprite frame",
+                                "minimum": 1
+                            },
+                            "height": {
+                                "type": "integer",
+                                "description": "Height of the sprite frame",
+                                "minimum": 1
+                            }
+                        }
+                    },
+                    "label": {
+                        "type": "string",
+                        "description": "Optional display label for this option"
+                    }
                 }
             }
         },
