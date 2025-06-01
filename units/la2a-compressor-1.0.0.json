@@ -92,7 +92,7 @@
                     "label": "Limit"
                 }
             ],
-            "currentIndex": 1,
+            "currentIndex": 0,
             "orientation": "vertical",
             "image": "assets/controls/switches/chrome-lg-sprite.png"
         },
