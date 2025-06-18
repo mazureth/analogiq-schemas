@@ -62,8 +62,8 @@
             "label": "Bypass",
             "type": "button",
             "position": {
-                "x": 0.471,
-                "y": 0.842
+                "x": 0.473,
+                "y": 0.79
             },
             "momentary": false,
             "state": false,
@@ -141,8 +141,8 @@
                     "frame": {
                         "x": 0,
                         "y": 0,
-                        "width": 29,
-                        "height": 29
+                        "width": 56,
+                        "height": 37
                     },
                     "label": "Input"
                 },
@@ -150,14 +150,14 @@
                     "value": "Output",
                     "frame": {
                         "x": 0,
-                        "y": 29,
-                        "width": 29,
-                        "height": 29
+                        "y": 37,
+                        "width": 56,
+                        "height": 37
                     },
                     "label": "Output"
                 }
             ],
-            "image": "assets/controls/buttons/button-circle-sm-black.jpg"
+            "image": "assets/controls/buttons/button-dbx-level-led-sm-black.jpg"
         }
     ]
 }
