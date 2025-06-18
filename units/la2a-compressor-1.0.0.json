@@ -106,16 +106,6 @@
             },
             "options": [
                 {
-                    "value": "On",
-                    "frame": {
-                        "x": 128,
-                        "y": 0,
-                        "width": 128,
-                        "height": 156
-                    },
-                    "label": "On"
-                },
-                {
                     "value": "Off",
                     "frame": {
                         "x": 0,
@@ -124,9 +114,19 @@
                         "height": 156
                     },
                     "label": "Off"
+                },
+                {
+                    "value": "On",
+                    "frame": {
+                        "x": 128,
+                        "y": 0,
+                        "width": 128,
+                        "height": 156
+                    },
+                    "label": "On"
                 }
             ],
-            "currentIndex": 0,
+            "currentIndex": 1,
             "orientation": "vertical",
             "image": "assets/controls/switches/chrome-lg-sprite.png"
         }

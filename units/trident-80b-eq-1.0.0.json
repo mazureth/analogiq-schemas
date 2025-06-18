@@ -23,12 +23,12 @@
             "label": "HF Gain",
             "type": "knob",
             "position": {
-                "x": 0.18,
-                "y": 0.15
+                "x": 0.508,
+                "y": 0.167
             },
             "value": 180,
-            "startAngle": 45,
-            "endAngle": 315,
+            "startAngle": 40,
+            "endAngle": 330,
             "image": "assets/controls/knobs/trident-sm-black.png"
         },
         {
@@ -36,12 +36,12 @@
             "label": "HMF Gain",
             "type": "knob",
             "position": {
-                "x": 0.18,
-                "y": 0.32
+                "x": 0.508,
+                "y": 0.36
             },
             "value": 180,
-            "startAngle": 45,
-            "endAngle": 315,
+            "startAngle": 40,
+            "endAngle": 330,
             "image": "assets/controls/knobs/trident-sm-green.png"
         },
         {
@@ -49,8 +49,8 @@
             "label": "HMF Freq",
             "type": "knob",
             "position": {
-                "x": 0.38,
-                "y": 0.32
+                "x": 0.447,
+                "y": 0.263
             },
             "value": 180,
             "startAngle": 45,
@@ -62,8 +62,8 @@
             "label": "LMF Gain",
             "type": "knob",
             "position": {
-                "x": 0.18,
-                "y": 0.49
+                "x": 0.508,
+                "y": 0.545
             },
             "value": 180,
             "startAngle": 45,
@@ -75,8 +75,8 @@
             "label": "LMF Freq",
             "type": "knob",
             "position": {
-                "x": 0.38,
-                "y": 0.49
+                "x": 0.447,
+                "y": 0.452
             },
             "value": 180,
             "startAngle": 45,
@@ -88,8 +88,8 @@
             "label": "LF Gain",
             "type": "knob",
             "position": {
-                "x": 0.18,
-                "y": 0.66
+                "x": 0.508,
+                "y": 0.72
             },
             "value": 180,
             "startAngle": 45,
@@ -101,8 +101,8 @@
             "label": "HPF",
             "type": "button",
             "position": {
-                "x": 0.7,
-                "y": 0.18
+                "x": 0.471,
+                "y": 0.598
             },
             "momentary": false,
             "state": false,
@@ -128,15 +128,15 @@
                     "label": "50Hz"
                 }
             ],
-            "image": "assets/controls/buttons/button-sm-glow.png"
+            "image": "assets/controls/buttons/button-sm-glow.jpg"
         },
         {
             "id": "low-freq",
             "label": "Low Freq",
             "type": "button",
             "position": {
-                "x": 0.7,
-                "y": 0.25
+                "x": 0.471,
+                "y": 0.689
             },
             "momentary": false,
             "state": false,
@@ -162,15 +162,15 @@
                     "label": "120Hz"
                 }
             ],
-            "image": "assets/controls/buttons/button-sm-glow.png"
+            "image": "assets/controls/buttons/button-sm-glow.jpg"
         },
         {
             "id": "hi-freq",
             "label": "Hi Freq",
             "type": "button",
             "position": {
-                "x": 0.7,
-                "y": 0.32
+                "x": 0.471,
+                "y": 0.14
             },
             "momentary": false,
             "state": false,
@@ -196,15 +196,15 @@
                     "label": "12kHz"
                 }
             ],
-            "image": "assets/controls/buttons/button-sm-glow.png"
+            "image": "assets/controls/buttons/button-sm-glow.jpg"
         },
         {
             "id": "eq-in",
             "label": "EQ IN",
             "type": "button",
             "position": {
-                "x": 0.7,
-                "y": 0.66
+                "x": 0.471,
+                "y": 0.842
             },
             "momentary": false,
             "state": false,
@@ -230,7 +230,7 @@
                     "label": "In"
                 }
             ],
-            "image": "assets/controls/buttons/button-sm-glow.png"
+            "image": "assets/controls/buttons/button-sm-glow.jpg"
         }
     ]
 }
