@@ -96,8 +96,8 @@
             "label": "Over-Easy",
             "type": "button",
             "position": {
-                "x": 0.471,
-                "y": 0.14
+                "x": 0.449,
+                "y": 0.09
             },
             "momentary": false,
             "state": false,
@@ -107,8 +107,8 @@
                     "frame": {
                         "x": 0,
                         "y": 0,
-                        "width": 29,
-                        "height": 29
+                        "width": 87,
+                        "height": 69
                     },
                     "label": "Off"
                 },
@@ -116,22 +116,22 @@
                     "value": "On",
                     "frame": {
                         "x": 0,
-                        "y": 29,
-                        "width": 29,
-                        "height": 29
+                        "y": 69,
+                        "width": 87,
+                        "height": 69
                     },
                     "label": "On"
                 }
             ],
-            "image": "assets/controls/buttons/button-circle-sm-black.jpg"
+            "image": "assets/controls/buttons/button-dbx-over-easy-led-sm-black.png"
         },
         {
             "id": "level",
             "label": "Level",
             "type": "button",
             "position": {
-                "x": 0.471,
-                "y": 0.14
+                "x": 0.5070,
+                "y": 0.82
             },
             "momentary": false,
             "state": false,
