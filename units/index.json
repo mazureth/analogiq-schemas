@@ -1,6 +1,23 @@
 {
     "units": [
         {
+            "unitId": "dbx-560a",
+            "name": "DBX 560A 500 Series Compressor",
+            "manufacturer": "DBX Professional",
+            "category": "compressor",
+            "version": "1.0.0",
+            "schemaPath": "units/dbx-560a-1.0.0.json",
+            "thumbnailImage": "assets/thumbnails/dbx-560a-1.0.0.jpg",
+            "tags": [
+                "DBX",
+                "500 series",
+                "compressor",
+                "VCA",
+                "hardware",
+                "dynamics"
+            ]
+        },
+        {
             "unitId": "la2a-compressor",
             "name": "LA-2A Tube Compressor",
             "manufacturer": "Universal Audio",

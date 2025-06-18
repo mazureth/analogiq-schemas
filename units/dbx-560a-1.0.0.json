@@ -1,0 +1,163 @@
+{
+    "unitId": "dbx-560a",
+    "name": "DBX 560A 500 Series Compressor",
+    "manufacturer": "DBX Professional",
+    "tags": [
+        "DBX",
+        "500 series",
+        "compressor",
+        "VCA",
+        "hardware",
+        "dynamics"
+    ],
+    "version": "1.0.0",
+    "category": "compressor",
+    "formFactor": "500-series",
+    "faceplateImage": "assets/faceplates/dbx-560a-1.0.0.jpg",
+    "thumbnailImage": "assets/thumbnails/dbx-560a-1.0.0.jpg",
+    "width": 150,
+    "height": 525,
+    "controls": [
+        {
+            "id": "threshold",
+            "label": "Threshold",
+            "type": "knob",
+            "position": {
+                "x": 0.508,
+                "y": 0.167
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/dbx-sm-red.png"
+        },
+        {
+            "id": "ratio",
+            "label": "Ratio",
+            "type": "knob",
+            "position": {
+                "x": 0.508,
+                "y": 0.36
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/dbx-sm-blue.png"
+        }
+        {
+            "id": "output",
+            "label": "Output",
+            "type": "knob",
+            "position": {
+                "x": 0.447,
+                "y": 0.452
+            },
+            "value": 180,
+            "startAngle": 45,
+            "endAngle": 315,
+            "image": "assets/controls/knobs/dbx-sm-green.png"
+        },
+        {
+            "id": "bypass",
+            "label": "Bypass",
+            "type": "button",
+            "position": {
+                "x": 0.471,
+                "y": 0.842
+            },
+            "momentary": false,
+            "state": false,
+            "options": [
+                {
+                    "value": "In",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 29,
+                        "height": 29
+                    },
+                    "label": "In"
+                },
+                {
+                    "value": "Out",
+                    "frame": {
+                        "x": 0,
+                        "y": 29,
+                        "width": 29,
+                        "height": 29
+                    },
+                    "label": "Out"
+                }
+            ],
+            "image": "assets/controls/buttons/button-circle-sm-black.jpg"
+        },
+        {
+            "id": "over-easy",
+            "label": "Over-Easy",
+            "type": "button",
+            "position": {
+                "x": 0.471,
+                "y": 0.14
+            },
+            "momentary": false,
+            "state": false,
+            "options": [
+                {
+                    "value": "Off",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 29,
+                        "height": 29
+                    },
+                    "label": "Off"
+                },
+                {
+                    "value": "On",
+                    "frame": {
+                        "x": 0,
+                        "y": 29,
+                        "width": 29,
+                        "height": 29
+                    },
+                    "label": "On"
+                }
+            ],
+            "image": "assets/controls/buttons/button-circle-sm-black.jpg"
+        },
+        {
+            "id": "level",
+            "label": "Level",
+            "type": "button",
+            "position": {
+                "x": 0.471,
+                "y": 0.14
+            },
+            "momentary": false,
+            "state": false,
+            "options": [
+                {
+                    "value": "Input",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 29,
+                        "height": 29
+                    },
+                    "label": "Input"
+                },
+                {
+                    "value": "Output",
+                    "frame": {
+                        "x": 0,
+                        "y": 29,
+                        "width": 29,
+                        "height": 29
+                    },
+                    "label": "Output"
+                }
+            ],
+            "image": "assets/controls/buttons/button-circle-sm-black.jpg"
+        }
+    ]
+}
