@@ -1,0 +1,157 @@
+{
+    "unitId": "maag-eq4",
+    "name": "Maag EQ4 500 Series Equalizer",
+    "manufacturer": "Maag Audio",
+    "tags": [
+        "Maag",
+        "500 series",
+        "equalizer",
+        "5-band",
+        "hardware",
+        "Air band",
+        "Reinhold Maag"
+    ],
+    "version": "1.0.0",
+    "category": "equalizer",
+    "formFactor": "500-series",
+    "faceplateImage": "assets/faceplates/maag-eq4-1.0.0.jpg",
+    "thumbnailImage": "assets/thumbnails/maag-eq4-1.0.0.jpg",
+    "width": 150,
+    "height": 525,
+    "controls": [
+        {
+            "id": "air-freq",
+            "label": "Air Freq",
+            "type": "knob",
+            "position": {
+                "x": 0.18,
+                "y": 0.12
+            },
+            "value": 0,
+            "startAngle": 45,
+            "endAngle": 315,
+            "steps": [
+                45,
+                99,
+                153,
+                207,
+                261,
+                315
+            ],
+            "currentStepIndex": 0,
+            "image": "assets/controls/knobs/rogan-sm-blue.png"
+        },
+        {
+            "id": "air-gain",
+            "label": "Air Gain",
+            "type": "knob",
+            "position": {
+                "x": 0.38,
+                "y": 0.12
+            },
+            "value": 0,
+            "startAngle": 45,
+            "endAngle": 315,
+            "image": "assets/controls/knobs/rogan-sm-yellow.png"
+        },
+        {
+            "id": "2k5-gain",
+            "label": "2.5k Gain",
+            "type": "knob",
+            "position": {
+                "x": 0.18,
+                "y": 0.25
+            },
+            "value": 0,
+            "startAngle": 45,
+            "endAngle": 315,
+            "image": "assets/controls/knobs/rogan-sm-orange.png"
+        },
+        {
+            "id": "650-gain",
+            "label": "650 Gain",
+            "type": "knob",
+            "position": {
+                "x": 0.18,
+                "y": 0.38
+            },
+            "value": 0,
+            "startAngle": 45,
+            "endAngle": 315,
+            "image": "assets/controls/knobs/rogan-sm-red.png"
+        },
+        {
+            "id": "160-gain",
+            "label": "160 Gain",
+            "type": "knob",
+            "position": {
+                "x": 0.18,
+                "y": 0.51
+            },
+            "value": 0,
+            "startAngle": 45,
+            "endAngle": 315,
+            "image": "assets/controls/knobs/rogan-sm-green.png"
+        },
+        {
+            "id": "40-gain",
+            "label": "40 Gain",
+            "type": "knob",
+            "position": {
+                "x": 0.18,
+                "y": 0.64
+            },
+            "value": 0,
+            "startAngle": 45,
+            "endAngle": 315,
+            "image": "assets/controls/knobs/rogan-sm-blue.png"
+        },
+        {
+            "id": "sub-gain",
+            "label": "Sub Gain",
+            "type": "knob",
+            "position": {
+                "x": 0.18,
+                "y": 0.77
+            },
+            "value": 0,
+            "startAngle": 45,
+            "endAngle": 315,
+            "image": "assets/controls/knobs/rogan-sm-black.png"
+        },
+        {
+            "id": "bypass",
+            "label": "Bypass",
+            "type": "button",
+            "position": {
+                "x": 0.7,
+                "y": 0.85
+            },
+            "momentary": false,
+            "state": false,
+            "options": [
+                {
+                    "value": "In",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 20,
+                        "height": 20
+                    },
+                    "label": "In"
+                },
+                {
+                    "value": "Out",
+                    "frame": {
+                        "x": 0,
+                        "y": 20,
+                        "width": 20,
+                        "height": 20
+                    },
+                    "label": "Out"
+                }
+            ],
+            "image": "assets/controls/buttons/button-sm-white.png"
+        }
+    ]
+}

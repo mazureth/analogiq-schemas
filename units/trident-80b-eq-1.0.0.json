@@ -29,7 +29,7 @@
             "value": 180,
             "startAngle": 40,
             "endAngle": 330,
-            "image": "assets/controls/knobs/trident-sm-black.png"
+            "image": "assets/controls/knobs/collet-sm-black.png"
         },
         {
             "id": "hmf-gain",
@@ -42,7 +42,7 @@
             "value": 180,
             "startAngle": 40,
             "endAngle": 330,
-            "image": "assets/controls/knobs/trident-sm-green.png"
+            "image": "assets/controls/knobs/collet-sm-green.png"
         },
         {
             "id": "hmf-freq",
@@ -55,7 +55,7 @@
             "value": 180,
             "startAngle": 45,
             "endAngle": 315,
-            "image": "assets/controls/knobs/trident-sm-red.png"
+            "image": "assets/controls/knobs/collet-sm-red.png"
         },
         {
             "id": "lmf-gain",
@@ -68,7 +68,7 @@
             "value": 180,
             "startAngle": 45,
             "endAngle": 315,
-            "image": "assets/controls/knobs/trident-sm-green.png"
+            "image": "assets/controls/knobs/collet-sm-green.png"
         },
         {
             "id": "lmf-freq",
@@ -81,7 +81,7 @@
             "value": 180,
             "startAngle": 45,
             "endAngle": 315,
-            "image": "assets/controls/knobs/trident-sm-red.png"
+            "image": "assets/controls/knobs/collet-sm-red.png"
         },
         {
             "id": "lf-gain",
@@ -94,7 +94,7 @@
             "value": 180,
             "startAngle": 45,
             "endAngle": 315,
-            "image": "assets/controls/knobs/trident-sm-black.png"
+            "image": "assets/controls/knobs/collet-sm-black.png"
         },
         {
             "id": "hpf",

@@ -50,6 +50,24 @@
             ]
         },
         {
+            "unitId": "maag-eq4",
+            "name": "Maag EQ4 500 Series Equalizer",
+            "manufacturer": "Maag Audio",
+            "category": "equalizer",
+            "version": "1.0.0",
+            "schemaPath": "units/maag-eq4-1.0.0.json",
+            "thumbnailImage": "assets/thumbnails/maag-eq4-1.0.0.jpg",
+            "tags": [
+                "Maag",
+                "500 series",
+                "equalizer",
+                "5-band",
+                "hardware",
+                "Air band",
+                "Reinhold Maag"
+            ]
+        },
+        {
             "unitId": "trident-80b-eq",
             "name": "Trident 80B 500 Series EQ",
             "manufacturer": "Trident Audio Developments",

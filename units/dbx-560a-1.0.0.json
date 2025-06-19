@@ -29,7 +29,7 @@
             "value": 180,
             "startAngle": 40,
             "endAngle": 330,
-            "image": "assets/controls/knobs/dbx-sm-red.png"
+            "image": "assets/controls/knobs/rogan-sm-red.png"
         },
         {
             "id": "ratio",
@@ -42,7 +42,7 @@
             "value": 180,
             "startAngle": 40,
             "endAngle": 330,
-            "image": "assets/controls/knobs/dbx-sm-blue.png"
+            "image": "assets/controls/knobs/rogan-sm-blue.png"
         },
         {
             "id": "output",
@@ -55,7 +55,7 @@
             "value": 180,
             "startAngle": 45,
             "endAngle": 315,
-            "image": "assets/controls/knobs/dbx-sm-green.png"
+            "image": "assets/controls/knobs/rogan-sm-green.png"
         },
         {
             "id": "bypass",
