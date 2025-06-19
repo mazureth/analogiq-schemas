@@ -6,8 +6,7 @@
         "compressor",
         "tube",
         "optical",
-        "vintage",
-        "hardware"
+        "vintage"
     ],
     "version": "1.0.0",
     "category": "compressor",

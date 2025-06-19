@@ -6,8 +6,7 @@
         "API",
         "500 series",
         "graphic EQ",
-        "10-band",
-        "hardware"
+        "10-band"
     ],
     "version": "1.0.0",
     "category": "equalizer",

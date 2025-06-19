@@ -1,0 +1,328 @@
+{
+    "unitId": "black-lion-b172a",
+    "name": "Black Lion Audio B172A Dual Compressor",
+    "manufacturer": "Black Lion Audio",
+    "tags": [
+        "Black Lion Audio",
+        "500 series",
+        "compressor",
+        "1176",
+        "LA-2A",
+        "FET",
+        "optical"
+    ],
+    "version": "1.0.0",
+    "category": "compressor",
+    "formFactor": "19-inch-rack",
+    "faceplateImage": "assets/faceplates/bla-b172a-1.0.0.jpg",
+    "thumbnailImage": "assets/thumbnails/bla-b172a-1.0.0.jpg",
+    "width": 1900,
+    "height": 350,
+    "controls": [
+        {
+            "id": "input",
+            "label": "Input",
+            "type": "knob",
+            "position": {
+                "x": 0.18,
+                "y": 0.15
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/urei-med-silver.png"
+        },
+        {
+            "id": "attack",
+            "label": "Attack",
+            "type": "knob",
+            "position": {
+                "x": 0.18,
+                "y": 0.28
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/urei-med-silver.png"
+        },
+        {
+            "id": "release",
+            "label": "Release",
+            "type": "knob",
+            "position": {
+                "x": 0.18,
+                "y": 0.41
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/urei-med-silver.png"
+        },
+        {
+            "id": "output",
+            "label": "Output",
+            "type": "knob",
+            "position": {
+                "x": 0.18,
+                "y": 0.54
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/urei-med-silver.png"
+        },
+        {
+            "id": "ratio",
+            "label": "Ratio",
+            "type": "knob",
+            "position": {
+                "x": 0.18,
+                "y": 0.67
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "steps": [
+                40,
+                80,
+                120,
+                160,
+                200,
+                240,
+                280,
+                330
+            ],
+            "currentStepIndex": 3,
+            "image": "assets/controls/knobs/bakelite-lg-black.png"
+        },
+        {
+            "id": "meter-17",
+            "label": "Meter (17)",
+            "type": "knob",
+            "position": {
+                "x": 0.18,
+                "y": 0.80
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "steps": [
+                40,
+                80,
+                120,
+                160,
+                200,
+                240,
+                280,
+                330
+            ],
+            "currentStepIndex": 0,
+            "image": "assets/controls/knobs/bakelite-lg-black.png"
+        },
+        {
+            "id": "bypass-17",
+            "label": "Bypass (17)",
+            "type": "switch",
+            "position": {
+                "x": 0.38,
+                "y": 0.67
+            },
+            "options": [
+                {
+                    "value": "In",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 32,
+                        "height": 32
+                    },
+                    "label": "In"
+                },
+                {
+                    "value": "Out",
+                    "frame": {
+                        "x": 32,
+                        "y": 0,
+                        "width": 32,
+                        "height": 32
+                    },
+                    "label": "Out"
+                }
+            ],
+            "currentIndex": 0,
+            "orientation": "vertical",
+            "image": "assets/controls/switches/chrome-lg-sprite.png"
+        },
+        {
+            "id": "gain",
+            "label": "Gain",
+            "type": "knob",
+            "position": {
+                "x": 0.65,
+                "y": 0.15
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/urei-med-silver.png"
+        },
+        {
+            "id": "peak-reduction",
+            "label": "Peak Reduction",
+            "type": "knob",
+            "position": {
+                "x": 0.65,
+                "y": 0.28
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/urei-med-silver.png"
+        },
+        {
+            "id": "meter-2a",
+            "label": "Meter (2A)",
+            "type": "knob",
+            "position": {
+                "x": 0.65,
+                "y": 0.41
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "steps": [
+                40,
+                80,
+                120,
+                160,
+                200,
+                240,
+                280,
+                330
+            ],
+            "currentStepIndex": 0,
+            "image": "assets/controls/knobs/bakelite-lg-black.png"
+        },
+        {
+            "id": "bypass-2a",
+            "label": "Bypass (2A)",
+            "type": "switch",
+            "position": {
+                "x": 0.85,
+                "y": 0.28
+            },
+            "options": [
+                {
+                    "value": "In",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 32,
+                        "height": 32
+                    },
+                    "label": "In"
+                },
+                {
+                    "value": "Out",
+                    "frame": {
+                        "x": 32,
+                        "y": 0,
+                        "width": 32,
+                        "height": 32
+                    },
+                    "label": "Out"
+                }
+            ],
+            "currentIndex": 0,
+            "orientation": "vertical",
+            "image": "assets/controls/switches/chrome-lg-sprite.png"
+        },
+        {
+            "id": "limit-compress",
+            "label": "Limit/Compress",
+            "type": "switch",
+            "position": {
+                "x": 0.85,
+                "y": 0.54
+            },
+            "options": [
+                {
+                    "value": "Compress",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 32,
+                        "height": 32
+                    },
+                    "label": "Compress"
+                },
+                {
+                    "value": "Limit",
+                    "frame": {
+                        "x": 32,
+                        "y": 0,
+                        "width": 32,
+                        "height": 32
+                    },
+                    "label": "Limit"
+                }
+            ],
+            "currentIndex": 0,
+            "orientation": "vertical",
+            "image": "assets/controls/switches/chrome-lg-sprite.png"
+        },
+        {
+            "id": "dual-mono-link",
+            "label": "Dual/Mono Link",
+            "type": "knob",
+            "position": {
+                "x": 0.85,
+                "y": 0.67
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "steps": [
+                40,
+                180,
+                330
+            ],
+            "currentStepIndex": 1,
+            "image": "assets/controls/knobs/bakelite-lg-black.png"
+        },
+        {
+            "id": "power",
+            "label": "Power",
+            "type": "switch",
+            "position": {
+                "x": 0.85,
+                "y": 0.80
+            },
+            "options": [
+                {
+                    "value": "Off",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 32,
+                        "height": 32
+                    },
+                    "label": "Off"
+                },
+                {
+                    "value": "On",
+                    "frame": {
+                        "x": 32,
+                        "y": 0,
+                        "width": 32,
+                        "height": 32
+                    },
+                    "label": "On"
+                }
+            ],
+            "currentIndex": 0,
+            "orientation": "vertical",
+            "image": "assets/controls/switches/chrome-lg-sprite.png"
+        }
+    ]
+}

@@ -1,6 +1,24 @@
 {
     "units": [
         {
+            "unitId": "black-lion-b172a",
+            "name": "Black Lion Audio B172A Dual Compressor",
+            "manufacturer": "Black Lion Audio",
+            "category": "compressor",
+            "version": "1.0.0",
+            "schemaPath": "units/black-lion-b172a-1.0.0.json",
+            "thumbnailImage": "assets/thumbnails/bla-b172a-1.0.0.jpg",
+            "tags": [
+                "Black Lion Audio",
+                "500 series",
+                "compressor",
+                "1176",
+                "LA-2A",
+                "FET",
+                "optical"
+            ]
+        },
+        {
             "unitId": "dbx-560a",
             "name": "DBX 560A 500 Series Compressor",
             "manufacturer": "DBX Professional",
@@ -13,7 +31,6 @@
                 "500 series",
                 "compressor",
                 "VCA",
-                "hardware",
                 "dynamics"
             ]
         },
@@ -29,8 +46,7 @@
                 "compressor",
                 "tube",
                 "optical",
-                "vintage",
-                "hardware"
+                "vintage"
             ]
         },
         {
@@ -45,8 +61,7 @@
                 "API",
                 "500 series",
                 "graphic EQ",
-                "10-band",
-                "hardware"
+                "10-band"
             ]
         },
         {
@@ -62,7 +77,6 @@
                 "500 series",
                 "equalizer",
                 "5-band",
-                "hardware",
                 "Air band",
                 "Reinhold Maag"
             ]
@@ -80,7 +94,6 @@
                 "500 series",
                 "equalizer",
                 "4-band",
-                "hardware",
                 "British EQ"
             ]
         }
