@@ -28,14 +28,14 @@
             },
             "value": 78,
             "startAngle": 78,
-            "endAngle": 315,
+            "endAngle": 250,
             "steps": [
                 78,
                 107,
                 145,
                 180,
                 215,
-                315
+                250
             ],
             "currentStepIndex": 0,
             "image": "assets/controls/knobs/rogan-sm-blue.png"
