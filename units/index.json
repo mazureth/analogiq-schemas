@@ -35,6 +35,23 @@
             ]
         },
         {
+            "unitId": "empirical-labs-distressor-el8",
+            "name": "Empirical Labs Distressor EL8",
+            "manufacturer": "Empirical Labs",
+            "category": "compressor",
+            "version": "1.0.0",
+            "schemaPath": "units/empirical-labs-distressor-el8-1.0.0.json",
+            "thumbnailImage": "assets/thumbnails/eli-distressor-el8-compressor-1.0.0.jpg",
+            "tags": [
+                "Empirical Labs",
+                "19-inch-rack",
+                "compressor",
+                "distressor",
+                "dynamics",
+                "distortion"
+            ]
+        },
+        {
             "unitId": "la2a-compressor",
             "name": "LA-2A Tube Compressor",
             "manufacturer": "Universal Audio",

@@ -65,7 +65,7 @@
                 "y": 0.79
             },
             "momentary": false,
-            "state": false,
+            "value": 0,
             "options": [
                 {
                     "value": "Out",
@@ -99,7 +99,7 @@
                 "y": 0.09
             },
             "momentary": false,
-            "state": false,
+            "value": 0,
             "options": [
                 {
                     "value": "Off",
@@ -133,7 +133,7 @@
                 "y": 0.82
             },
             "momentary": false,
-            "state": false,
+            "value": 0,
             "options": [
                 {
                     "value": "Input",
