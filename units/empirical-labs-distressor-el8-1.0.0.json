@@ -23,11 +23,11 @@
             "label": "Input",
             "type": "knob",
             "position": {
-                "x": 0.1,
-                "y": 0.642
+                "x": 0.476,
+                "y": 0.12
             },
             "value": 180,
-            "startAngle": 40,
+            "startAngle": 30,
             "endAngle": 330,
             "image": "assets/controls/knobs/eli-lg-white.png"
         },
@@ -36,11 +36,11 @@
             "label": "Attack",
             "type": "knob",
             "position": {
-                "x": 0.25,
-                "y": 0.642
+                "x": 0.582,
+                "y": 0.12
             },
             "value": 180,
-            "startAngle": 40,
+            "startAngle": 30,
             "endAngle": 330,
             "image": "assets/controls/knobs/eli-lg-white.png"
         },
@@ -49,11 +49,11 @@
             "label": "Release",
             "type": "knob",
             "position": {
-                "x": 0.4,
-                "y": 0.642
+                "x": 0.687,
+                "y": 0.12
             },
             "value": 180,
-            "startAngle": 40,
+            "startAngle": 30,
             "endAngle": 330,
             "image": "assets/controls/knobs/eli-lg-white.png"
         },
@@ -62,11 +62,11 @@
             "label": "Output",
             "type": "knob",
             "position": {
-                "x": 0.55,
-                "y": 0.642
+                "x": 0.793,
+                "y": 0.12
             },
             "value": 180,
-            "startAngle": 40,
+            "startAngle": 30,
             "endAngle": 330,
             "image": "assets/controls/knobs/eli-lg-white.png"
         },
@@ -75,8 +75,8 @@
             "label": "Bypass",
             "type": "button",
             "position": {
-                "x": 0.7,
-                "y": 0.642
+                "x": 0.181,
+                "y": 0.4
             },
             "momentary": false,
             "value": 0,
@@ -109,8 +109,8 @@
             "label": "Ratio",
             "type": "button",
             "position": {
-                "x": 0.8,
-                "y": 0.642
+                "x": 0.132,
+                "y": 0.595
             },
             "momentary": false,
             "value": 0,
@@ -129,9 +129,9 @@
                     "value": "2",
                     "frame": {
                         "x": 0,
-                        "y": 54,
+                        "y": 56,
                         "width": 421,
-                        "height": 54
+                        "height": 55
                     },
                     "label": "2"
                 },
@@ -139,7 +139,7 @@
                     "value": "3",
                     "frame": {
                         "x": 0,
-                        "y": 108,
+                        "y": 110,
                         "width": 421,
                         "height": 54
                     },
@@ -159,7 +159,7 @@
                     "value": "6",
                     "frame": {
                         "x": 0,
-                        "y": 216,
+                        "y": 218,
                         "width": 421,
                         "height": 54
                     },
@@ -169,7 +169,7 @@
                     "value": "10",
                     "frame": {
                         "x": 0,
-                        "y": 270,
+                        "y": 272,
                         "width": 421,
                         "height": 54
                     },
@@ -189,22 +189,22 @@
                     "value": "Nuke",
                     "frame": {
                         "x": 0,
-                        "y": 378,
+                        "y": 379,
                         "width": 421,
                         "height": 54
                     },
                     "label": "Nuke"
                 }
             ],
-            "image": "assets/controls/buttons/empirical-labs-ratio-button.png"
+            "image": "assets/controls/buttons/button-distressor-ratio.png"
         },
         {
             "id": "detector",
             "label": "Detector",
             "type": "button",
             "position": {
-                "x": 0.9,
-                "y": 0.642
+                "x": 0.375,
+                "y": 0.13
             },
             "momentary": false,
             "value": 0,
@@ -290,15 +290,15 @@
                     "label": "Hi Pass + Band + Link"
                 }
             ],
-            "image": "assets/controls/buttons/empirical-labs-detector-button.png"
+            "image": "assets/controls/buttons/button-distressor-detector.png"
         },
         {
             "id": "audio",
             "label": "Audio",
             "type": "button",
             "position": {
-                "x": 0.95,
-                "y": 0.642
+                "x": 0.427,
+                "y": 0.13
             },
             "momentary": false,
             "value": 0,
@@ -364,7 +364,7 @@
                     "label": "Hi Pass + Dist 3"
                 }
             ],
-            "image": "assets/controls/buttons/empirical-labs-audio-button.png"
+            "image": "assets/controls/buttons/button-distressor-audio.png"
         }
     ]
 }
