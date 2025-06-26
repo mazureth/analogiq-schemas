@@ -82,6 +82,22 @@
             ]
         },
         {
+            "unitId": "lindell-pex-500",
+            "name": "Lindell PEX-500 EQ",
+            "manufacturer": "Lindell Audio",
+            "category": "equalizer",
+            "version": "1.0.0",
+            "schemaPath": "units/lindell-pex-500-1.0.0.json",
+            "thumbnailImage": "assets/thumbnails/lindell-pex-500-1.0.0.jpg",
+            "tags": [
+                "Lindell",
+                "500 series",
+                "equalizer",
+                "Pultec",
+                "passive"
+            ]
+        },
+        {
             "unitId": "maag-eq4",
             "name": "Maag EQ4 500 Series Equalizer",
             "manufacturer": "Maag Audio",
