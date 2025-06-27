@@ -13,8 +13,8 @@
     "version": "1.0.0",
     "category": "compressor",
     "formFactor": "19-inch-rack",
-    "faceplateImage": "assets/faceplates/warm-audio-bus-comp-1.0.0.jpg",
-    "thumbnailImage": "assets/thumbnails/warm-audio-bus-comp-1.0.0.jpg",
+    "faceplateImage": "assets/faceplates/warm-bus-comp-1.0.0.jpg",
+    "thumbnailImage": "assets/thumbnails/warm-bus-comp-1.0.0.jpg",
     "width": 1900,
     "height": 175,
     "controls": [
