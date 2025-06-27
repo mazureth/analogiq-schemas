@@ -158,7 +158,7 @@
                 "y": 0.3
             },
             "momentary": false,
-            "state": false,
+            "value": 2,
             "options": [
                 {
                     "value": "Soft",
@@ -202,7 +202,7 @@
                 "y": 0.3
             },
             "momentary": false,
-            "state": false,
+            "value": 0,
             "options": [
                 {
                     "value": "Off",
@@ -246,7 +246,7 @@
                 "y": 0.3
             },
             "momentary": false,
-            "state": false,
+            "value": 0,
             "options": [
                 {
                     "value": "Feed Forward",
@@ -280,7 +280,7 @@
                 "y": 0.3
             },
             "momentary": false,
-            "state": false,
+            "value": 1,
             "options": [
                 {
                     "value": "Old",
@@ -324,7 +324,7 @@
                 "y": 0.3
             },
             "momentary": false,
-            "state": false,
+            "value": 1,
             "options": [
                 {
                     "value": "Out",
@@ -358,7 +358,7 @@
                 "y": 0.3
             },
             "momentary": false,
-            "state": false,
+            "value": 0,
             "options": [
                 {
                     "value": "In",
@@ -392,27 +392,27 @@
                 "y": 0.3
             },
             "momentary": false,
-            "state": false,
+            "value": 0,
             "options": [
                 {
-                    "value": "Input",
+                    "value": "Auto",
                     "frame": {
                         "x": 0,
                         "y": 0,
                         "width": 40,
                         "height": 40
                     },
-                    "label": "Input"
+                    "label": "Auto"
                 },
                 {
-                    "value": "Output",
+                    "value": "Manual",
                     "frame": {
                         "x": 0,
                         "y": 40,
                         "width": 40,
                         "height": 40
                     },
-                    "label": "Output"
+                    "label": "Manual"
                 }
             ],
             "image": "assets/controls/buttons/api-gain-button.png"
@@ -426,7 +426,7 @@
                 "y": 0.3
             },
             "momentary": false,
-            "state": false,
+            "value": 0,
             "options": [
                 {
                     "value": "GR",
