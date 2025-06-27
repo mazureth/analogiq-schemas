@@ -23,8 +23,8 @@
             "label": "Threshold",
             "type": "knob",
             "position": {
-                "x": 0.1,
-                "y": 0.642
+                "x": 0.058,
+                "y": 0.42
             },
             "value": 180,
             "startAngle": 40,
@@ -36,20 +36,20 @@
             "label": "Attack",
             "type": "knob",
             "position": {
-                "x": 0.2,
-                "y": 0.642
+                "x": 0.1,
+                "y": 0.28
             },
             "value": 180,
-            "startAngle": 40,
-            "endAngle": 330,
+            "startAngle": 80,
+            "endAngle": 285,
             "steps": [
-                40,
-                85,
-                130,
-                175,
-                220,
-                265,
-                330
+                80,
+                120,
+                145,
+                180,
+                215,
+                250,
+                285
             ],
             "currentStepIndex": 3,
             "image": "assets/controls/knobs/api-med-black.png"
@@ -59,20 +59,20 @@
             "label": "Ratio",
             "type": "knob",
             "position": {
-                "x": 0.3,
-                "y": 0.642
+                "x": 0.15,
+                "y": 0.28
             },
             "value": 180,
-            "startAngle": 40,
-            "endAngle": 330,
+            "startAngle": 80,
+            "endAngle": 285,
             "steps": [
-                40,
-                85,
-                130,
-                175,
-                220,
-                265,
-                330
+                80,
+                120,
+                145,
+                180,
+                215,
+                250,
+                285
             ],
             "currentStepIndex": 2,
             "image": "assets/controls/knobs/api-med-black.png"
@@ -82,20 +82,20 @@
             "label": "Release",
             "type": "knob",
             "position": {
-                "x": 0.4,
-                "y": 0.642
+                "x": 0.202,
+                "y": 0.28
             },
             "value": 180,
-            "startAngle": 40,
-            "endAngle": 330,
+            "startAngle": 80,
+            "endAngle": 285,
             "steps": [
-                40,
-                85,
-                130,
-                175,
-                220,
-                265,
-                330
+                80,
+                120,
+                145,
+                180,
+                215,
+                250,
+                285
             ],
             "currentStepIndex": 3,
             "image": "assets/controls/knobs/api-med-black.png"
@@ -105,8 +105,8 @@
             "label": "Release Variable",
             "type": "knob",
             "position": {
-                "x": 0.5,
-                "y": 0.642
+                "x": 0.264,
+                "y": 0.43
             },
             "value": 180,
             "startAngle": 40,
@@ -118,20 +118,20 @@
             "label": "Link",
             "type": "knob",
             "position": {
-                "x": 0.6,
-                "y": 0.642
+                "x": 0.412,
+                "y": 0.28
             },
             "value": 180,
-            "startAngle": 40,
-            "endAngle": 330,
+            "startAngle": 80,
+            "endAngle": 285,
             "steps": [
-                40,
-                85,
-                130,
-                175,
-                220,
-                265,
-                330
+                80,
+                120,
+                145,
+                180,
+                215,
+                250,
+                285
             ],
             "currentStepIndex": 0,
             "image": "assets/controls/knobs/api-med-black.png"
@@ -141,8 +141,8 @@
             "label": "Make Up Gain",
             "type": "knob",
             "position": {
-                "x": 0.7,
-                "y": 0.642
+                "x": 0.568,
+                "y": 0.44
             },
             "value": 180,
             "startAngle": 40,
@@ -154,52 +154,218 @@
             "label": "Knee",
             "type": "button",
             "position": {
-                "x": 0.15,
-                "y": 0.3
+                "x": 0.322,
+                "y": 0.262
             },
             "momentary": false,
-            "value": 2,
+            "value": 0,
             "options": [
                 {
-                    "value": "Soft",
+                    "value": "Hard",
                     "frame": {
                         "x": 0,
                         "y": 0,
-                        "width": 40,
-                        "height": 40
+                        "width": 49,
+                        "height": 89
                     },
-                    "label": "Soft"
+                    "label": "Hard"
                 },
                 {
                     "value": "Medium",
                     "frame": {
                         "x": 0,
-                        "y": 40,
-                        "width": 40,
-                        "height": 40
+                        "y": 89,
+                        "width": 49,
+                        "height": 89
                     },
                     "label": "Medium"
                 },
                 {
-                    "value": "Hard",
+                    "value": "Soft",
                     "frame": {
                         "x": 0,
-                        "y": 80,
-                        "width": 40,
-                        "height": 40
+                        "y": 178,
+                        "width": 49,
+                        "height": 89
                     },
-                    "label": "Hard"
+                    "label": "Soft"
                 }
             ],
-            "image": "assets/controls/buttons/api-knee-button.png"
+            "image": "assets/controls/buttons/button-api-knee.png"
         },
         {
             "id": "thrust",
             "label": "Thrust",
             "type": "button",
             "position": {
-                "x": 0.25,
-                "y": 0.3
+                "x": 0.352,
+                "y": 0.24
+            },
+            "momentary": false,
+            "value": 0,
+            "options": [
+                {
+                    "value": "Normal",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 53,
+                        "height": 93
+                    },
+                    "label": "Normal"
+                },
+                {
+                    "value": "Med",
+                    "frame": {
+                        "x": 0,
+                        "y": 92,
+                        "width": 53,
+                        "height": 93
+                    },
+                    "label": "Med"
+                },
+                {
+                    "value": "Loud",
+                    "frame": {
+                        "x": 0,
+                        "y": 186,
+                        "width": 53,
+                        "height": 93
+                    },
+                    "label": "Loud"
+                }
+            ],
+            "image": "assets/controls/buttons/button-api-thrust.png"
+        },
+        {
+            "id": "feedback-type",
+            "label": "Feedback Type",
+            "type": "button",
+            "position": {
+                "x": 0.385,
+                "y": 0.4
+            },
+            "momentary": false,
+            "value": 0,
+            "options": [
+                {
+                    "value": "New",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 40,
+                        "height": 63
+                    },
+                    "label": "New"
+                },
+                {
+                    "value": "Old",
+                    "frame": {
+                        "x": 0,
+                        "y": 63,
+                        "width": 40,
+                        "height": 63
+                    },
+                    "label": "Old"
+                }
+            ],
+            "image": "assets/controls/buttons/button-api-feedback-type.png"
+        },
+        {
+            "id": "shape",
+            "label": "Shape",
+            "type": "button",
+            "position": {
+                "x": 0.474,
+                "y": 0.33
+            },
+            "momentary": false,
+            "value": 1,
+            "options": [
+                {
+                    "value": "Off",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 37,
+                        "height": 75
+                    },
+                    "label": "Off"
+                },
+                {
+                    "value": "HP",
+                    "frame": {
+                        "x": 0,
+                        "y": 75,
+                        "width": 37,
+                        "height": 75
+                    },
+                    "label": "HP"
+                },
+                {
+                    "value": "LP",
+                    "frame": {
+                        "x": 0,
+                        "y": 150,
+                        "width": 37,
+                        "height": 75
+                    },
+                    "label": "LP"
+                },
+                {
+                    "value": "BP",
+                    "frame": {
+                        "x": 0,
+                        "y": 225,
+                        "width": 37,
+                        "height": 75
+                    },
+                    "label": "BP"
+                }
+            ],
+            "image": "assets/controls/buttons/button-api-shape.png"
+        },
+        {
+            "id": "in",
+            "label": "In",
+            "type": "button",
+            "position": {
+                "x": 0.505,
+                "y": 0.53
+            },
+            "momentary": false,
+            "value": 1,
+            "options": [
+                {
+                    "value": "On",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 25,
+                        "height": 44
+                    },
+                    "label": "On"
+                },
+                {
+                    "value": "Off",
+                    "frame": {
+                        "x": 0,
+                        "y": 44,
+                        "width": 25,
+                        "height": 44
+                    },
+                    "label": "Off"
+                }
+            ],
+            "image": "assets/controls/buttons/button-api-in.png"
+        },
+        {
+            "id": "bypass",
+            "label": "Bypass",
+            "type": "button",
+            "position": {
+                "x": 0.526,
+                "y": 0.53
             },
             "momentary": false,
             "value": 0,
@@ -209,187 +375,31 @@
                     "frame": {
                         "x": 0,
                         "y": 0,
-                        "width": 40,
-                        "height": 40
+                        "width": 23,
+                        "height": 44
                     },
                     "label": "Off"
                 },
                 {
-                    "value": "Medium",
+                    "value": "On",
                     "frame": {
                         "x": 0,
-                        "y": 40,
-                        "width": 40,
-                        "height": 40
+                        "y": 44,
+                        "width": 23,
+                        "height": 44
                     },
-                    "label": "Medium"
-                },
-                {
-                    "value": "High",
-                    "frame": {
-                        "x": 0,
-                        "y": 80,
-                        "width": 40,
-                        "height": 40
-                    },
-                    "label": "High"
+                    "label": "On"
                 }
             ],
-            "image": "assets/controls/buttons/api-thrust-button.png"
-        },
-        {
-            "id": "type",
-            "label": "Type",
-            "type": "button",
-            "position": {
-                "x": 0.35,
-                "y": 0.3
-            },
-            "momentary": false,
-            "value": 0,
-            "options": [
-                {
-                    "value": "Feed Forward",
-                    "frame": {
-                        "x": 0,
-                        "y": 0,
-                        "width": 40,
-                        "height": 40
-                    },
-                    "label": "Feed Forward"
-                },
-                {
-                    "value": "Feed Back",
-                    "frame": {
-                        "x": 0,
-                        "y": 40,
-                        "width": 40,
-                        "height": 40
-                    },
-                    "label": "Feed Back"
-                }
-            ],
-            "image": "assets/controls/buttons/api-type-button.png"
-        },
-        {
-            "id": "shape",
-            "label": "Shape",
-            "type": "button",
-            "position": {
-                "x": 0.45,
-                "y": 0.3
-            },
-            "momentary": false,
-            "value": 1,
-            "options": [
-                {
-                    "value": "Old",
-                    "frame": {
-                        "x": 0,
-                        "y": 0,
-                        "width": 40,
-                        "height": 40
-                    },
-                    "label": "Old"
-                },
-                {
-                    "value": "New",
-                    "frame": {
-                        "x": 0,
-                        "y": 40,
-                        "width": 40,
-                        "height": 40
-                    },
-                    "label": "New"
-                },
-                {
-                    "value": "Opto",
-                    "frame": {
-                        "x": 0,
-                        "y": 80,
-                        "width": 40,
-                        "height": 40
-                    },
-                    "label": "Opto"
-                }
-            ],
-            "image": "assets/controls/buttons/api-shape-button.png"
-        },
-        {
-            "id": "in",
-            "label": "In",
-            "type": "button",
-            "position": {
-                "x": 0.55,
-                "y": 0.3
-            },
-            "momentary": false,
-            "value": 1,
-            "options": [
-                {
-                    "value": "Out",
-                    "frame": {
-                        "x": 0,
-                        "y": 0,
-                        "width": 40,
-                        "height": 40
-                    },
-                    "label": "Out"
-                },
-                {
-                    "value": "In",
-                    "frame": {
-                        "x": 0,
-                        "y": 40,
-                        "width": 40,
-                        "height": 40
-                    },
-                    "label": "In"
-                }
-            ],
-            "image": "assets/controls/buttons/api-in-button.png"
-        },
-        {
-            "id": "bypass",
-            "label": "Bypass",
-            "type": "button",
-            "position": {
-                "x": 0.65,
-                "y": 0.3
-            },
-            "momentary": false,
-            "value": 0,
-            "options": [
-                {
-                    "value": "In",
-                    "frame": {
-                        "x": 0,
-                        "y": 0,
-                        "width": 40,
-                        "height": 40
-                    },
-                    "label": "In"
-                },
-                {
-                    "value": "Out",
-                    "frame": {
-                        "x": 0,
-                        "y": 40,
-                        "width": 40,
-                        "height": 40
-                    },
-                    "label": "Out"
-                }
-            ],
-            "image": "assets/controls/buttons/api-bypass-button.png"
+            "image": "assets/controls/buttons/button-api-bypass.png"
         },
         {
             "id": "gain",
             "label": "Gain",
             "type": "button",
             "position": {
-                "x": 0.75,
-                "y": 0.3
+                "x": 0.546,
+                "y": 0.54
             },
             "momentary": false,
             "value": 0,
@@ -399,8 +409,8 @@
                     "frame": {
                         "x": 0,
                         "y": 0,
-                        "width": 40,
-                        "height": 40
+                        "width": 24,
+                        "height": 43
                     },
                     "label": "Auto"
                 },
@@ -408,21 +418,21 @@
                     "value": "Manual",
                     "frame": {
                         "x": 0,
-                        "y": 40,
-                        "width": 40,
-                        "height": 40
+                        "y": 43,
+                        "width": 24,
+                        "height": 43
                     },
                     "label": "Manual"
                 }
             ],
-            "image": "assets/controls/buttons/api-gain-button.png"
+            "image": "assets/controls/buttons/button-api-gain.png"
         },
         {
             "id": "meter",
             "label": "Meter",
             "type": "button",
             "position": {
-                "x": 0.85,
+                "x": 0.82,
                 "y": 0.3
             },
             "momentary": false,
@@ -433,8 +443,8 @@
                     "frame": {
                         "x": 0,
                         "y": 0,
-                        "width": 40,
-                        "height": 40
+                        "width": 36,
+                        "height": 85
                     },
                     "label": "GR"
                 },
@@ -442,9 +452,9 @@
                     "value": "Output",
                     "frame": {
                         "x": 0,
-                        "y": 40,
-                        "width": 40,
-                        "height": 40
+                        "y": 85,
+                        "width": 36,
+                        "height": 85
                     },
                     "label": "Output"
                 },
@@ -452,14 +462,14 @@
                     "value": "Input",
                     "frame": {
                         "x": 0,
-                        "y": 80,
-                        "width": 40,
-                        "height": 40
+                        "y": 170,
+                        "width": 36,
+                        "height": 85
                     },
                     "label": "Input"
                 }
             ],
-            "image": "assets/controls/buttons/api-meter-button.png"
+            "image": "assets/controls/buttons/button-api-meter.png"
         }
     ]
 }
