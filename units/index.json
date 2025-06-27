@@ -1,6 +1,23 @@
 {
     "units": [
         {
+            "unitId": "api-2500",
+            "name": "API 2500 Bus Compressor",
+            "manufacturer": "Automated Processes Inc.",
+            "category": "compressor",
+            "version": "1.0.0",
+            "schemaPath": "units/api-2500-1.0.0.json",
+            "thumbnailImage": "assets/thumbnails/api-2500-1.0.0.jpg",
+            "tags": [
+                "API",
+                "19-inch-rack",
+                "compressor",
+                "bus",
+                "dynamics",
+                "Thrust"
+            ]
+        },
+        {
             "unitId": "black-lion-b172a",
             "name": "Black Lion Audio B172A Dual Compressor",
             "manufacturer": "Black Lion Audio",
