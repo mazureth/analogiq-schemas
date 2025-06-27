@@ -1,0 +1,236 @@
+{
+    "unitId": "warm-audio-bus-comp",
+    "name": "Warm Audio Bus Comp",
+    "manufacturer": "Warm Audio",
+    "tags": [
+        "Warm Audio",
+        "19-inch-rack",
+        "compressor",
+        "bus",
+        "dynamics",
+        "SSL Style"
+    ],
+    "version": "1.0.0",
+    "category": "compressor",
+    "formFactor": "19-inch-rack",
+    "faceplateImage": "assets/faceplates/warm-audio-bus-comp-1.0.0.jpg",
+    "thumbnailImage": "assets/thumbnails/warm-audio-bus-comp-1.0.0.jpg",
+    "width": 1900,
+    "height": 175,
+    "controls": [
+        {
+            "id": "threshold",
+            "label": "Threshold",
+            "type": "knob",
+            "position": {
+                "x": 0.1,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/collet-med-white.png"
+        },
+        {
+            "id": "attack",
+            "label": "Attack",
+            "type": "knob",
+            "position": {
+                "x": 0.25,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "steps": [
+                40,
+                85,
+                130,
+                175,
+                220,
+                330
+            ],
+            "currentStepIndex": 2,
+            "image": "assets/controls/knobs/collet-med-white.png"
+        },
+        {
+            "id": "ratio",
+            "label": "Ratio",
+            "type": "knob",
+            "position": {
+                "x": 0.4,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "steps": [
+                40,
+                85,
+                130,
+                175,
+                330
+            ],
+            "currentStepIndex": 1,
+            "image": "assets/controls/knobs/collet-med-white.png"
+        },
+        {
+            "id": "release",
+            "label": "Release",
+            "type": "knob",
+            "position": {
+                "x": 0.55,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "steps": [
+                40,
+                85,
+                130,
+                175,
+                330
+            ],
+            "currentStepIndex": 2,
+            "image": "assets/controls/knobs/collet-med-white.png"
+        },
+        {
+            "id": "hpf",
+            "label": "HPF",
+            "type": "knob",
+            "position": {
+                "x": 0.7,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "steps": [
+                40,
+                85,
+                130,
+                175,
+                220,
+                330
+            ],
+            "currentStepIndex": 0,
+            "image": "assets/controls/knobs/collet-med-white.png"
+        },
+        {
+            "id": "makeup",
+            "label": "Make Up",
+            "type": "knob",
+            "position": {
+                "x": 0.85,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/collet-med-white.png"
+        },
+        {
+            "id": "compressor",
+            "label": "Compressor",
+            "type": "button",
+            "position": {
+                "x": 0.15,
+                "y": 0.3
+            },
+            "momentary": false,
+            "value": 0,
+            "options": [
+                {
+                    "value": "Off",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "Off"
+                },
+                {
+                    "value": "On",
+                    "frame": {
+                        "x": 0,
+                        "y": 40,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "On"
+                }
+            ],
+            "image": "assets/controls/buttons/button-lg-glow.png"
+        },
+        {
+            "id": "ext-sidechain",
+            "label": "Ext Side Chain",
+            "type": "button",
+            "position": {
+                "x": 0.35,
+                "y": 0.3
+            },
+            "momentary": false,
+            "value": 0,
+            "options": [
+                {
+                    "value": "Off",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "Off"
+                },
+                {
+                    "value": "On",
+                    "frame": {
+                        "x": 0,
+                        "y": 40,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "On"
+                }
+            ],
+            "image": "assets/controls/buttons/button-lg-glow.png"
+        },
+        {
+            "id": "transformers",
+            "label": "Transformers",
+            "type": "button",
+            "position": {
+                "x": 0.55,
+                "y": 0.3
+            },
+            "momentary": false,
+            "value": 0,
+            "options": [
+                {
+                    "value": "Off",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "Off"
+                },
+                {
+                    "value": "On",
+                    "frame": {
+                        "x": 0,
+                        "y": 40,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "On"
+                }
+            ],
+            "image": "assets/controls/buttons/button-lg-glow.png"
+        }
+    ]
+}

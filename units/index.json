@@ -84,6 +84,23 @@
             ]
         },
         {
+            "unitId": "warm-audio-bus-comp",
+            "name": "Warm Audio Bus Comp",
+            "manufacturer": "Warm Audio",
+            "category": "compressor",
+            "version": "1.0.0",
+            "schemaPath": "units/warm-audio-bus-comp-1.0.0.json",
+            "thumbnailImage": "assets/thumbnails/warm-audio-bus-comp-1.0.0.jpg",
+            "tags": [
+                "Warm Audio",
+                "19-inch-rack",
+                "compressor",
+                "bus",
+                "dynamics",
+                "SSL Style"
+            ]
+        },
+        {
             "unitId": "api-560-eq",
             "name": "API 560 10-Band Graphic Equalizer",
             "manufacturer": "Automated Processes Inc.",
