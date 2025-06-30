@@ -104,8 +104,8 @@
                 "y": 0.34
             },
             "value": 180,
-            "startAngle": 40,
-            "endAngle": 330,
+            "startAngle": 90,
+            "endAngle": 240,
             "steps": [
                 90,
                 120,

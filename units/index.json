@@ -163,6 +163,25 @@
                 "4-band",
                 "British EQ"
             ]
+        },
+        {
+            "unitId": "warm-audio-tube-eq",
+            "name": "Warm Audio Tube EQ",
+            "manufacturer": "Warm Audio",
+            "category": "equalizer",
+            "version": "1.0.0",
+            "schemaPath": "units/warm-audio-tube-eq-1.0.0.json",
+            "thumbnailImage": "assets/thumbnails/warm-tube-eq-1.0.0.jpg",
+            "tags": [
+                "Warm Audio",
+                "19-inch-rack",
+                "equalizer",
+                "Pultec",
+                "EQP-1A",
+                "passive",
+                "tube",
+                "vintage"
+            ]
         }
     ]
 }
