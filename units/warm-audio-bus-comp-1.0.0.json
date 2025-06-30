@@ -23,8 +23,8 @@
             "label": "Threshold",
             "type": "knob",
             "position": {
-                "x": 0.1,
-                "y": 0.642
+                "x": 0.245,
+                "y": 0.34
             },
             "value": 180,
             "startAngle": 40,
@@ -36,19 +36,19 @@
             "label": "Attack",
             "type": "knob",
             "position": {
-                "x": 0.25,
-                "y": 0.642
+                "x": 0.318,
+                "y": 0.34
             },
-            "value": 180,
-            "startAngle": 40,
-            "endAngle": 330,
+            "value": 183,
+            "startAngle": 125,
+            "endAngle": 270,
             "steps": [
-                40,
-                85,
-                130,
-                175,
-                220,
-                330
+                125,
+                155,
+                183,
+                210,
+                240,
+                270
             ],
             "currentStepIndex": 2,
             "image": "assets/controls/knobs/collet-med-white.png"
@@ -58,18 +58,18 @@
             "label": "Ratio",
             "type": "knob",
             "position": {
-                "x": 0.4,
-                "y": 0.642
+                "x": 0.393,
+                "y": 0.34
             },
             "value": 180,
-            "startAngle": 40,
-            "endAngle": 330,
+            "startAngle": 90,
+            "endAngle": 200,
             "steps": [
-                40,
-                85,
-                130,
-                175,
-                330
+                90,
+                120,
+                150,
+                180,
+                200
             ],
             "currentStepIndex": 1,
             "image": "assets/controls/knobs/collet-med-white.png"
@@ -79,18 +79,18 @@
             "label": "Release",
             "type": "knob",
             "position": {
-                "x": 0.55,
-                "y": 0.642
+                "x": 0.465,
+                "y": 0.34
             },
             "value": 180,
-            "startAngle": 40,
-            "endAngle": 330,
+            "startAngle": 120,
+            "endAngle": 240,
             "steps": [
-                40,
-                85,
-                130,
-                175,
-                330
+                120,
+                150,
+                180,
+                210,
+                240
             ],
             "currentStepIndex": 2,
             "image": "assets/controls/knobs/collet-med-white.png"
@@ -100,19 +100,19 @@
             "label": "HPF",
             "type": "knob",
             "position": {
-                "x": 0.7,
-                "y": 0.642
+                "x": 0.537,
+                "y": 0.34
             },
             "value": 180,
             "startAngle": 40,
             "endAngle": 330,
             "steps": [
-                40,
-                85,
-                130,
-                175,
-                220,
-                330
+                90,
+                120,
+                150,
+                180,
+                210,
+                240
             ],
             "currentStepIndex": 0,
             "image": "assets/controls/knobs/collet-med-white.png"
@@ -122,8 +122,8 @@
             "label": "Make Up",
             "type": "knob",
             "position": {
-                "x": 0.85,
-                "y": 0.642
+                "x": 0.61,
+                "y": 0.34
             },
             "value": 180,
             "startAngle": 40,
@@ -135,8 +135,8 @@
             "label": "Compressor",
             "type": "button",
             "position": {
-                "x": 0.15,
-                "y": 0.3
+                "x": 0.683,
+                "y": 0.34
             },
             "momentary": false,
             "value": 0,
@@ -146,8 +146,8 @@
                     "frame": {
                         "x": 0,
                         "y": 0,
-                        "width": 40,
-                        "height": 40
+                        "width": 59,
+                        "height": 59
                     },
                     "label": "Off"
                 },
@@ -155,9 +155,9 @@
                     "value": "On",
                     "frame": {
                         "x": 0,
-                        "y": 40,
-                        "width": 40,
-                        "height": 40
+                        "y": 59,
+                        "width": 59,
+                        "height": 59
                     },
                     "label": "On"
                 }
@@ -169,8 +169,8 @@
             "label": "Ext Side Chain",
             "type": "button",
             "position": {
-                "x": 0.35,
-                "y": 0.3
+                "x": 0.744,
+                "y": 0.34
             },
             "momentary": false,
             "value": 0,
@@ -180,8 +180,8 @@
                     "frame": {
                         "x": 0,
                         "y": 0,
-                        "width": 40,
-                        "height": 40
+                        "width": 59,
+                        "height": 59
                     },
                     "label": "Off"
                 },
@@ -189,9 +189,9 @@
                     "value": "On",
                     "frame": {
                         "x": 0,
-                        "y": 40,
-                        "width": 40,
-                        "height": 40
+                        "y": 59,
+                        "width": 59,
+                        "height": 59
                     },
                     "label": "On"
                 }
@@ -203,8 +203,8 @@
             "label": "Transformers",
             "type": "button",
             "position": {
-                "x": 0.55,
-                "y": 0.3
+                "x": 0.805,
+                "y": 0.34
             },
             "momentary": false,
             "value": 0,
@@ -214,8 +214,8 @@
                     "frame": {
                         "x": 0,
                         "y": 0,
-                        "width": 40,
-                        "height": 40
+                        "width": 59,
+                        "height": 59
                     },
                     "label": "Off"
                 },
@@ -223,9 +223,9 @@
                     "value": "On",
                     "frame": {
                         "x": 0,
-                        "y": 40,
-                        "width": 40,
-                        "height": 40
+                        "y": 59,
+                        "width": 59,
+                        "height": 59
                     },
                     "label": "On"
                 }
