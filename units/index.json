@@ -101,6 +101,24 @@
             ]
         },
         {
+            "unitId": "bbe-sonic-maximizer-882i",
+            "name": "BBE Sonic Maximizer",
+            "manufacturer": "BBE Sound",
+            "category": "enhancer",
+            "version": "1.0.0",
+            "schemaPath": "units/bbe-sonic-maximizer-882i-1.0.0.json",
+            "thumbnailImage": "assets/thumbnails/bbe-sonic-maximizer-882i-1.0.0.jpg",
+            "tags": [
+                "BBE",
+                "19-inch-rack",
+                "enhancer",
+                "maximizer",
+                "hardware",
+                "presence",
+                "air"
+            ]
+        },
+        {
             "unitId": "api-560-eq",
             "name": "API 560 10-Band Graphic Equalizer",
             "manufacturer": "Automated Processes Inc.",
