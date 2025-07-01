@@ -25,12 +25,12 @@
             "label": "Low Boost",
             "type": "knob",
             "position": {
-                "x": 0.1,
-                "y": 0.642
+                "x": 0.15,
+                "y": 0.15
             },
-            "value": 0,
-            "startAngle": 45,
-            "endAngle": 315,
+            "value": 180,
+            "startAngle": 30,
+            "endAngle": 330,
             "image": "assets/controls/knobs/bakelite-round-lg-black.png"
         },
         {
@@ -38,35 +38,35 @@
             "label": "Low Freq",
             "type": "knob",
             "position": {
-                "x": 0.2,
-                "y": 0.642
+                "x": 0.25,
+                "y": 0.48
             },
             "value": 180,
-            "startAngle": 45,
-            "endAngle": 315,
+            "startAngle": 90,
+            "endAngle": 270,
             "steps": [
-                45,
-                85,
-                125,
-                165,
-                205,
-                245,
-                315
+                90,
+                120,
+                150,
+                180,
+                210,
+                240,
+                270
             ],
             "currentStepIndex": 3,
-            "image": "assets/controls/knobs/bakelite-lg-black.png"
+            "image": "assets/controls/knobs/bakelite-med-black.png"
         },
         {
             "id": "low-cut",
             "label": "Low Cut",
             "type": "knob",
             "position": {
-                "x": 0.3,
-                "y": 0.642
+                "x": 0.333,
+                "y": 0.15
             },
-            "value": 0,
-            "startAngle": 45,
-            "endAngle": 315,
+            "value": 180,
+            "startAngle": 30,
+            "endAngle": 330,
             "image": "assets/controls/knobs/bakelite-round-lg-black.png"
         },
         {
@@ -74,48 +74,48 @@
             "label": "Hi Q",
             "type": "knob",
             "position": {
-                "x": 0.4,
-                "y": 0.642
+                "x": 0.442,
+                "y": 0.44
             },
-            "value": 0.5,
-            "startAngle": 45,
-            "endAngle": 315,
-            "image": "assets/controls/knobs/bakelite-round-lg-blacke.png"
+            "value": 180,
+            "startAngle": 30,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/bakelite-round-lg-black.png"
+        },
+        {
+            "id": "hi-freq",
+            "label": "Hi Frew",
+            "type": "knob",
+            "position": {
+                "x": 0.652,
+                "y": 0.48
+            },
+            "value": 180,
+            "startAngle": 90,
+            "endAngle": 270,
+            "steps": [
+                90,
+                120,
+                150,
+                180,
+                210,
+                240,
+                270
+            ],
+            "currentStepIndex": 3,
+            "image": "assets/controls/knobs/bakelite-med-black.png"
         },
         {
             "id": "hi-boost",
             "label": "Hi Boost",
             "type": "knob",
             "position": {
-                "x": 0.5,
-                "y": 0.642
+                "x": 0.553,
+                "y": 0.15
             },
             "value": 180,
-            "startAngle": 45,
-            "endAngle": 315,
-            "steps": [
-                45,
-                85,
-                125,
-                165,
-                205,
-                245,
-                315
-            ],
-            "currentStepIndex": 3,
-            "image": "assets/controls/knobs/bakelite-lg-black.png"
-        },
-        {
-            "id": "hi-freq",
-            "label": "Hi Freq",
-            "type": "knob",
-            "position": {
-                "x": 0.6,
-                "y": 0.642
-            },
-            "value": 0.5,
-            "startAngle": 45,
-            "endAngle": 315,
+            "startAngle": 30,
+            "endAngle": 330,
             "image": "assets/controls/knobs/bakelite-round-lg-black.png"
         },
         {
@@ -123,12 +123,12 @@
             "label": "Hi Cut",
             "type": "knob",
             "position": {
-                "x": 0.7,
-                "y": 0.642
+                "x": 0.735,
+                "y": 0.15
             },
-            "value": 0,
-            "startAngle": 45,
-            "endAngle": 315,
+            "value": 180,
+            "startAngle": 30,
+            "endAngle": 330,
             "image": "assets/controls/knobs/bakelite-round-lg-black.png"
         },
         {
@@ -136,89 +136,89 @@
             "label": "Hi Cut Freq",
             "type": "knob",
             "position": {
-                "x": 0.8,
-                "y": 0.642
+                "x": 0.85,
+                "y": 0.2
             },
             "value": 180,
-            "startAngle": 45,
-            "endAngle": 315,
+            "startAngle": 120,
+            "endAngle": 240,
             "steps": [
-                45,
-                105,
-                165,
-                225,
-                315
+                120,
+                150,
+                180,
+                210,
+                240
             ],
             "currentStepIndex": 2,
-            "image": "assets/controls/knobs/bakelite-lg-black.png"
+            "image": "assets/controls/knobs/bakelite-med-black.png"
         },
         {
             "id": "eq-on",
             "label": "EQ On",
             "type": "switch",
             "position": {
-                "x": 0.85,
-                "y": 0.3
+                "x": 0.113,
+                "y": 0.78
             },
             "options": [
                 {
-                    "value": "Off",
+                    "value": "Bypass",
                     "frame": {
                         "x": 0,
-                        "y": 0,
-                        "width": 32,
-                        "height": 32
+                        "y": 74,
+                        "width": 37,
+                        "height": 40
                     },
-                    "label": "Off"
+                    "label": "Bypass"
                 },
                 {
                     "value": "On",
                     "frame": {
-                        "x": 32,
+                        "x": 0,
                         "y": 0,
-                        "width": 32,
-                        "height": 32
+                        "width": 37,
+                        "height": 40
                     },
                     "label": "On"
                 }
             ],
             "currentIndex": 0,
             "orientation": "vertical",
-            "image": "assets/controls/switches/chrome-lg-sprite.png"
+            "image": "assets/controls/switches/3pos-sm-chrome.png"
         },
         {
             "id": "power",
             "label": "Power",
             "type": "switch",
             "position": {
-                "x": 0.95,
-                "y": 0.3
+                "x": 0.895,
+                "y": 0.78
             },
             "options": [
                 {
                     "value": "Off",
                     "frame": {
                         "x": 0,
-                        "y": 0,
-                        "width": 32,
-                        "height": 32
+                        "y": 74,
+                        "width": 37,
+                        "height": 40
                     },
                     "label": "Off"
                 },
                 {
                     "value": "On",
                     "frame": {
-                        "x": 32,
+                        "x": 0,
                         "y": 0,
-                        "width": 32,
-                        "height": 32
+                        "width": 37,
+                        "height": 40
                     },
                     "label": "On"
                 }
             ],
             "currentIndex": 0,
             "orientation": "vertical",
-            "image": "assets/controls/switches/warm-audio-switch-sprite.png"
+            "image": "assets/controls/switches/3pos-sm-chrome.png"
         }
     ]
 }
