@@ -127,7 +127,7 @@
                 "y": 0.865
             },
             "momentary": false,
-            "state": false,
+            "value": 0,
             "options": [
                 {
                     "value": "Out",
