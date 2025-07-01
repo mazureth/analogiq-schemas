@@ -7,7 +7,7 @@
         "type",
         "position",
         "momentary",
-        "state",
+        "value",
         "options",
         "image"
     ],
