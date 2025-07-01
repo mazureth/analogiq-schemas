@@ -18,6 +18,25 @@
             ]
         },
         {
+            "unitId": "alesis-3630",
+            "name": "Alesis 3630 Dual Compressor",
+            "manufacturer": "Alesis",
+            "category": "compressor",
+            "version": "1.0.0",
+            "schemaPath": "units/alesis-3630-1.0.0.json",
+            "thumbnailImage": "assets/thumbnails/alesis-3630-compressor-1.0.0.jpg",
+            "tags": [
+                "Alesis",
+                "19-inch-rack",
+                "compressor",
+                "dual-mono",
+                "gate",
+                "hardware",
+                "dynamics",
+                "electronic"
+            ]
+        },
+        {
             "unitId": "black-lion-b172a",
             "name": "Black Lion Audio B172A Dual Compressor",
             "manufacturer": "Black Lion Audio",

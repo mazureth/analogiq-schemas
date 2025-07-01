@@ -1,0 +1,512 @@
+{
+    "unitId": "alesis-3630",
+    "name": "Alesis 3630 Dual Compressor",
+    "manufacturer": "Alesis",
+    "tags": [
+        "Alesis",
+        "19-inch-rack",
+        "compressor",
+        "dual-mono",
+        "gate",
+        "hardware",
+        "dynamics",
+        "electronic"
+    ],
+    "version": "1.0.0",
+    "category": "compressor",
+    "formFactor": "19-inch-rack",
+    "faceplateImage": "assets/faceplates/alesis-3630-compressor-1.0.0.jpg",
+    "thumbnailImage": "assets/thumbnails/alesis-3630-compressor-1.0.0.jpg",
+    "width": 1900,
+    "height": 175,
+    "controls": [
+        {
+            "id": "threshold-left",
+            "label": "Threshold Left",
+            "type": "knob",
+            "position": {
+                "x": 0.05,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/rogan-sm-black.png"
+        },
+        {
+            "id": "ratio-left",
+            "label": "Ratio Left",
+            "type": "knob",
+            "position": {
+                "x": 0.12,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/rogan-sm-black.png"
+        },
+        {
+            "id": "attack-left",
+            "label": "Attack Left",
+            "type": "knob",
+            "position": {
+                "x": 0.19,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/rogan-sm-black.png"
+        },
+        {
+            "id": "release-left",
+            "label": "Release Left",
+            "type": "knob",
+            "position": {
+                "x": 0.26,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/rogan-sm-black.png"
+        },
+        {
+            "id": "output-left",
+            "label": "Output Left",
+            "type": "knob",
+            "position": {
+                "x": 0.33,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/rogan-sm-black.png"
+        },
+        {
+            "id": "gate-threshold-left",
+            "label": "Gate Threshold Left",
+            "type": "knob",
+            "position": {
+                "x": 0.4,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/rogan-sm-black.png"
+        },
+        {
+            "id": "gate-rate-left",
+            "label": "Gate Rate Left",
+            "type": "knob",
+            "position": {
+                "x": 0.47,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/rogan-sm-black.png"
+        },
+        {
+            "id": "threshold-right",
+            "label": "Threshold Right",
+            "type": "knob",
+            "position": {
+                "x": 0.54,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/rogan-sm-black.png"
+        },
+        {
+            "id": "ratio-right",
+            "label": "Ratio Right",
+            "type": "knob",
+            "position": {
+                "x": 0.61,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/rogan-sm-black.png"
+        },
+        {
+            "id": "attack-right",
+            "label": "Attack Right",
+            "type": "knob",
+            "position": {
+                "x": 0.68,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/rogan-sm-black.png"
+        },
+        {
+            "id": "release-right",
+            "label": "Release Right",
+            "type": "knob",
+            "position": {
+                "x": 0.75,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/rogan-sm-black.png"
+        },
+        {
+            "id": "output-right",
+            "label": "Output Right",
+            "type": "knob",
+            "position": {
+                "x": 0.82,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/rogan-sm-black.png"
+        },
+        {
+            "id": "gate-threshold-right",
+            "label": "Gate Threshold Right",
+            "type": "knob",
+            "position": {
+                "x": 0.89,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/rogan-sm-black.png"
+        },
+        {
+            "id": "gate-rate-right",
+            "label": "Gate Rate Right",
+            "type": "knob",
+            "position": {
+                "x": 0.96,
+                "y": 0.642
+            },
+            "value": 180,
+            "startAngle": 40,
+            "endAngle": 330,
+            "image": "assets/controls/knobs/rogan-sm-black.png"
+        },
+        {
+            "id": "mode-left",
+            "label": "Mode Left",
+            "type": "button",
+            "position": {
+                "x": 0.08,
+                "y": 0.3
+            },
+            "momentary": false,
+            "value": 0,
+            "options": [
+                {
+                    "value": "Comp",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "Comp"
+                },
+                {
+                    "value": "Gate",
+                    "frame": {
+                        "x": 0,
+                        "y": 40,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "Gate"
+                }
+            ],
+            "image": "assets/controls/buttons/button-alesis-small.png"
+        },
+        {
+            "id": "knee-left",
+            "label": "Knee Left",
+            "type": "button",
+            "position": {
+                "x": 0.15,
+                "y": 0.3
+            },
+            "momentary": false,
+            "value": 0,
+            "options": [
+                {
+                    "value": "Hard",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "Hard"
+                },
+                {
+                    "value": "Soft",
+                    "frame": {
+                        "x": 0,
+                        "y": 40,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "Soft"
+                }
+            ],
+            "image": "assets/controls/buttons/button-alesis-small.png"
+        },
+        {
+            "id": "disp-left",
+            "label": "Disp Left",
+            "type": "button",
+            "position": {
+                "x": 0.22,
+                "y": 0.3
+            },
+            "momentary": false,
+            "value": 0,
+            "options": [
+                {
+                    "value": "Input",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "Input"
+                },
+                {
+                    "value": "Output",
+                    "frame": {
+                        "x": 0,
+                        "y": 40,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "Output"
+                }
+            ],
+            "image": "assets/controls/buttons/button-alesis-small.png"
+        },
+        {
+            "id": "bypass-left",
+            "label": "Bypass Left",
+            "type": "button",
+            "position": {
+                "x": 0.29,
+                "y": 0.3
+            },
+            "momentary": false,
+            "value": 0,
+            "options": [
+                {
+                    "value": "In",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "In"
+                },
+                {
+                    "value": "Out",
+                    "frame": {
+                        "x": 0,
+                        "y": 40,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "Out"
+                }
+            ],
+            "image": "assets/controls/buttons/button-alesis-small.png"
+        },
+        {
+            "id": "stereo-link",
+            "label": "Stereo Link",
+            "type": "button",
+            "position": {
+                "x": 0.5,
+                "y": 0.3
+            },
+            "momentary": false,
+            "value": 0,
+            "options": [
+                {
+                    "value": "Off",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "Off"
+                },
+                {
+                    "value": "On",
+                    "frame": {
+                        "x": 0,
+                        "y": 40,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "On"
+                }
+            ],
+            "image": "assets/controls/buttons/button-alesis-small.png"
+        },
+        {
+            "id": "mode-right",
+            "label": "Mode Right",
+            "type": "button",
+            "position": {
+                "x": 0.57,
+                "y": 0.3
+            },
+            "momentary": false,
+            "value": 0,
+            "options": [
+                {
+                    "value": "Comp",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "Comp"
+                },
+                {
+                    "value": "Gate",
+                    "frame": {
+                        "x": 0,
+                        "y": 40,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "Gate"
+                }
+            ],
+            "image": "assets/controls/buttons/button-alesis-small.png"
+        },
+        {
+            "id": "knee-right",
+            "label": "Knee Right",
+            "type": "button",
+            "position": {
+                "x": 0.64,
+                "y": 0.3
+            },
+            "momentary": false,
+            "value": 0,
+            "options": [
+                {
+                    "value": "Hard",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "Hard"
+                },
+                {
+                    "value": "Soft",
+                    "frame": {
+                        "x": 0,
+                        "y": 40,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "Soft"
+                }
+            ],
+            "image": "assets/controls/buttons/button-alesis-small.png"
+        },
+        {
+            "id": "disp-right",
+            "label": "Disp Right",
+            "type": "button",
+            "position": {
+                "x": 0.71,
+                "y": 0.3
+            },
+            "momentary": false,
+            "value": 0,
+            "options": [
+                {
+                    "value": "Input",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "Input"
+                },
+                {
+                    "value": "Output",
+                    "frame": {
+                        "x": 0,
+                        "y": 40,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "Output"
+                }
+            ],
+            "image": "assets/controls/buttons/button-alesis-small.png"
+        },
+        {
+            "id": "bypass-right",
+            "label": "Bypass Right",
+            "type": "button",
+            "position": {
+                "x": 0.78,
+                "y": 0.3
+            },
+            "momentary": false,
+            "value": 0,
+            "options": [
+                {
+                    "value": "In",
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "In"
+                },
+                {
+                    "value": "Out",
+                    "frame": {
+                        "x": 0,
+                        "y": 40,
+                        "width": 40,
+                        "height": 40
+                    },
+                    "label": "Out"
+                }
+            ],
+            "image": "assets/controls/buttons/button-alesis-small.png"
+        }
+    ]
+}
