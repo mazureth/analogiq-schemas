@@ -24,8 +24,8 @@
             "label": "Lo Contour Left",
             "type": "knob",
             "position": {
-                "x": 0.15,
-                "y": 0.642
+                "x": 0.249,
+                "y": 0.33
             },
             "value": 180,
             "startAngle": 40,
@@ -37,8 +37,8 @@
             "label": "Process Left",
             "type": "knob",
             "position": {
-                "x": 0.35,
-                "y": 0.642
+                "x": 0.316,
+                "y": 0.33
             },
             "value": 180,
             "startAngle": 40,
@@ -50,8 +50,8 @@
             "label": "Lo Contour Right",
             "type": "knob",
             "position": {
-                "x": 0.55,
-                "y": 0.642
+                "x": 0.528,
+                "y": 0.33
             },
             "value": 180,
             "startAngle": 40,
@@ -63,8 +63,8 @@
             "label": "Process Right",
             "type": "knob",
             "position": {
-                "x": 0.75,
-                "y": 0.642
+                "x": 0.595,
+                "y": 0.33
             },
             "value": 180,
             "startAngle": 40,
@@ -76,31 +76,31 @@
             "label": "Bypass",
             "type": "button",
             "position": {
-                "x": 0.85,
-                "y": 0.3
+                "x": 0.408,
+                "y": 0.5
             },
             "momentary": false,
             "value": 0,
             "options": [
                 {
-                    "value": "Out",
+                    "value": "In",
                     "frame": {
                         "x": 0,
                         "y": 0,
                         "width": 125,
                         "height": 43
                     },
-                    "label": "Out"
+                    "label": "In"
                 },
                 {
-                    "value": "In",
+                    "value": "Out",
                     "frame": {
                         "x": 0,
                         "y": 43,
                         "width": 125,
-                        "height": 4
+                        "height": 43
                     },
-                    "label": "In"
+                    "label": "Out"
                 }
             ],
             "image": "assets/controls/buttons/button-bbe-bypass.png"
