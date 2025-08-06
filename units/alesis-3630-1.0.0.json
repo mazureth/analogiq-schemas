@@ -15,8 +15,8 @@
     "version": "1.0.0",
     "category": "compressor",
     "formFactor": "19-inch-rack",
-    "faceplateImage": "assets/faceplates/alesis-3630-compressor-1.0.0.jpg",
-    "thumbnailImage": "assets/thumbnails/alesis-3630-compressor-1.0.0.jpg",
+    "faceplateImage": "assets/faceplates/alesis-3630-compressor-1.0.0.png",
+    "thumbnailImage": "assets/thumbnails/alesis-3630-compressor-1.0.0.png",
     "width": 1900,
     "height": 175,
     "controls": [

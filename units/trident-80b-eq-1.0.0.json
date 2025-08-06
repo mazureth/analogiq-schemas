@@ -12,8 +12,8 @@
     "version": "1.0.0",
     "category": "equalizer",
     "formFactor": "500-series",
-    "faceplateImage": "assets/faceplates/trident-80b-eq-1.0.0.jpg",
-    "thumbnailImage": "assets/thumbnails/trident-80b-eq-1.0.0.jpg",
+    "faceplateImage": "assets/faceplates/trident-80b-eq-1.0.0.png",
+    "thumbnailImage": "assets/thumbnails/trident-80b-eq-1.0.0.png",
     "width": 150,
     "height": 525,
     "controls": [
@@ -127,7 +127,7 @@
                     "label": "50Hz"
                 }
             ],
-            "image": "assets/controls/buttons/button-sm-glow.jpg"
+            "image": "assets/controls/buttons/button-sm-glow.png"
         },
         {
             "id": "low-freq",
@@ -161,7 +161,7 @@
                     "label": "120Hz"
                 }
             ],
-            "image": "assets/controls/buttons/button-sm-glow.jpg"
+            "image": "assets/controls/buttons/button-sm-glow.png"
         },
         {
             "id": "hi-freq",
@@ -195,7 +195,7 @@
                     "label": "12kHz"
                 }
             ],
-            "image": "assets/controls/buttons/button-sm-glow.jpg"
+            "image": "assets/controls/buttons/button-sm-glow.png"
         },
         {
             "id": "eq-in",
@@ -229,7 +229,7 @@
                     "label": "In"
                 }
             ],
-            "image": "assets/controls/buttons/button-sm-glow.jpg"
+            "image": "assets/controls/buttons/button-sm-glow.png"
         }
     ]
 }
