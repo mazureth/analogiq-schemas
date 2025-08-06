@@ -104,6 +104,7 @@
         "image": {
             "type": "string",
             "format": "uri",
+            "pattern": "\\.png$",
             "description": "URI to the sprite sheet image containing both button states (pressed and released)"
         }
     }
