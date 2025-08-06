@@ -53,11 +53,14 @@
         },
         "faceplateImage": {
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "pattern": "\\.png$",
+            "description": "Faceplate image of the unit for use in plugin interfaces"
         },
         "thumbnailImage": {
             "type": "string",
             "format": "uri",
+            "pattern": "\\.png$",
             "description": "Thumbnail image of the unit for use in plugin interfaces"
         },
         "width": {
