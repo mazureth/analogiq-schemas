@@ -59,6 +59,7 @@
         "image": {
             "type": "string",
             "format": "uri",
+            "pattern": "\\.png$",
             "description": "URI to the image representing this specific fader's handle"
         }
     }

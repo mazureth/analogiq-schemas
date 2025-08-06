@@ -14,8 +14,8 @@
     "version": "1.0.0",
     "category": "compressor",
     "formFactor": "19-inch-rack",
-    "faceplateImage": "assets/faceplates/bla-b172a-1.0.0.jpg",
-    "thumbnailImage": "assets/thumbnails/bla-b172a-1.0.0.jpg",
+    "faceplateImage": "assets/faceplates/bla-b172a-1.0.0.png",
+    "thumbnailImage": "assets/thumbnails/bla-b172a-1.0.0.png",
     "width": 1900,
     "height": 350,
     "controls": [

@@ -13,8 +13,8 @@
     "version": "1.0.0",
     "category": "equalizer",
     "formFactor": "500-series",
-    "faceplateImage": "assets/faceplates/maag-eq4-1.0.0.jpg",
-    "thumbnailImage": "assets/thumbnails/maag-eq4-1.0.0.jpg",
+    "faceplateImage": "assets/faceplates/maag-eq4-1.0.0.png",
+    "thumbnailImage": "assets/thumbnails/maag-eq4-1.0.0.png",
     "width": 150,
     "height": 525,
     "controls": [
@@ -150,7 +150,7 @@
                     "label": "In"
                 }
             ],
-            "image": "assets/controls/buttons/button-maag-led-left-sm-black.jpg"
+            "image": "assets/controls/buttons/button-maag-led-left-sm-black.png"
         }
     ]
 }

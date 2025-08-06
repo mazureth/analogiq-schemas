@@ -12,8 +12,8 @@
     "version": "1.0.0",
     "category": "equalizer",
     "formFactor": "500-series",
-    "faceplateImage": "assets/faceplates/lindell-pex-500-1.0.0.jpg",
-    "thumbnailImage": "assets/thumbnails/lindell-pex-500-1.0.0.jpg",
+    "faceplateImage": "assets/faceplates/lindell-pex-500-1.0.0.png",
+    "thumbnailImage": "assets/thumbnails/lindell-pex-500-1.0.0.png",
     "width": 150,
     "height": 525,
     "controls": [

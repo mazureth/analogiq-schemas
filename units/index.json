@@ -7,7 +7,7 @@
             "category": "compressor",
             "version": "1.0.0",
             "schemaPath": "units/api-2500-1.0.0.json",
-            "thumbnailImage": "assets/thumbnails/api-2500-1.0.0.jpg",
+            "thumbnailImage": "assets/thumbnails/api-2500-1.0.0.png",
             "tags": [
                 "API",
                 "19-inch-rack",
@@ -24,7 +24,7 @@
             "category": "compressor",
             "version": "1.0.0",
             "schemaPath": "units/alesis-3630-1.0.0.json",
-            "thumbnailImage": "assets/thumbnails/alesis-3630-compressor-1.0.0.jpg",
+            "thumbnailImage": "assets/thumbnails/alesis-3630-compressor-1.0.0.png",
             "tags": [
                 "Alesis",
                 "19-inch-rack",
@@ -43,7 +43,7 @@
             "category": "compressor",
             "version": "1.0.0",
             "schemaPath": "units/black-lion-b172a-1.0.0.json",
-            "thumbnailImage": "assets/thumbnails/bla-b172a-1.0.0.jpg",
+            "thumbnailImage": "assets/thumbnails/bla-b172a-1.0.0.png",
             "tags": [
                 "Black Lion Audio",
                 "500 series",
@@ -61,7 +61,7 @@
             "category": "compressor",
             "version": "1.0.0",
             "schemaPath": "units/dbx-560a-1.0.0.json",
-            "thumbnailImage": "assets/thumbnails/dbx-560a-1.0.0.jpg",
+            "thumbnailImage": "assets/thumbnails/dbx-560a-1.0.0.png",
             "tags": [
                 "DBX",
                 "500 series",
@@ -77,7 +77,7 @@
             "category": "compressor",
             "version": "1.0.0",
             "schemaPath": "units/empirical-labs-distressor-el8-1.0.0.json",
-            "thumbnailImage": "assets/thumbnails/eli-distressor-el8-compressor-1.0.0.jpg",
+            "thumbnailImage": "assets/thumbnails/eli-distressor-el8-compressor-1.0.0.png",
             "tags": [
                 "Empirical Labs",
                 "19-inch-rack",
@@ -94,7 +94,7 @@
             "category": "compressor",
             "version": "1.0.0",
             "schemaPath": "units/la2a-compressor-1.0.0.json",
-            "thumbnailImage": "assets/thumbnails/la2a-compressor-1.0.0.jpg",
+            "thumbnailImage": "assets/thumbnails/la2a-compressor-1.0.0.png",
             "tags": [
                 "compressor",
                 "tube",
@@ -109,7 +109,7 @@
             "category": "compressor",
             "version": "1.0.0",
             "schemaPath": "units/warm-audio-bus-comp-1.0.0.json",
-            "thumbnailImage": "assets/thumbnails/warm-bus-comp-1.0.0.jpg",
+            "thumbnailImage": "assets/thumbnails/warm-bus-comp-1.0.0.png",
             "tags": [
                 "Warm Audio",
                 "19-inch-rack",
@@ -126,7 +126,7 @@
             "category": "enhancer",
             "version": "1.0.0",
             "schemaPath": "units/bbe-sonic-maximizer-882i-1.0.0.json",
-            "thumbnailImage": "assets/thumbnails/bbe-sonic-maximizer-882i-1.0.0.jpg",
+            "thumbnailImage": "assets/thumbnails/bbe-sonic-maximizer-882i-1.0.0.png",
             "tags": [
                 "BBE",
                 "19-inch-rack",
@@ -144,7 +144,7 @@
             "category": "equalizer",
             "version": "1.0.0",
             "schemaPath": "units/api-560-eq-1.0.0.json",
-            "thumbnailImage": "assets/thumbnails/api-560-eq-1.0.0.jpg",
+            "thumbnailImage": "assets/thumbnails/api-560-eq-1.0.0.png",
             "tags": [
                 "API",
                 "500 series",
@@ -159,7 +159,7 @@
             "category": "equalizer",
             "version": "1.0.0",
             "schemaPath": "units/lindell-pex-500-1.0.0.json",
-            "thumbnailImage": "assets/thumbnails/lindell-pex-500-1.0.0.jpg",
+            "thumbnailImage": "assets/thumbnails/lindell-pex-500-1.0.0.png",
             "tags": [
                 "Lindell",
                 "500 series",
@@ -175,7 +175,7 @@
             "category": "equalizer",
             "version": "1.0.0",
             "schemaPath": "units/maag-eq4-1.0.0.json",
-            "thumbnailImage": "assets/thumbnails/maag-eq4-1.0.0.jpg",
+            "thumbnailImage": "assets/thumbnails/maag-eq4-1.0.0.png",
             "tags": [
                 "Maag",
                 "500 series",
@@ -192,7 +192,7 @@
             "category": "equalizer",
             "version": "1.0.0",
             "schemaPath": "units/trident-80b-eq-1.0.0.json",
-            "thumbnailImage": "assets/thumbnails/trident-80b-eq-1.0.0.jpg",
+            "thumbnailImage": "assets/thumbnails/trident-80b-eq-1.0.0.png",
             "tags": [
                 "Trident",
                 "500 series",
@@ -208,7 +208,7 @@
             "category": "equalizer",
             "version": "1.0.0",
             "schemaPath": "units/warm-audio-tube-eq-1.0.0.json",
-            "thumbnailImage": "assets/thumbnails/warm-tube-eq-1.0.0.jpg",
+            "thumbnailImage": "assets/thumbnails/warm-tube-eq-1.0.0.png",
             "tags": [
                 "Warm Audio",
                 "19-inch-rack",

@@ -71,6 +71,7 @@
         "image": {
             "type": "string",
             "format": "uri",
+            "pattern": "\\.png$",
             "description": "URI to the knob image"
         }
     },

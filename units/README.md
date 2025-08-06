@@ -24,13 +24,6 @@ When updating a unit file, follow these rules for version numbers:
 - `1.1.0`: Added new controls while maintaining compatibility
 - `2.0.0`: Changed control positions or removed controls
 
-## Available Units
-
-| Unit ID | Name | Latest Version | Category |
-|---------|------|----------------|----------|
-| la2a-compressor | LA-2A Compressor | 1.0.0 | compressor |
-| api-560-eq | API 560 10-Band Graphic Equalizer | 1.0.0 | equalizer |
-
 ## Unit Structure
 
 Each unit file conforms to the schema defined in `../schemas/unit.json`. See the main README for detailed information on the schema structure. 

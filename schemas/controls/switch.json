@@ -105,6 +105,7 @@
         "image": {
             "type": "string",
             "format": "uri",
+            "pattern": "\\.png$",
             "description": "URI to the sprite sheet image containing all switch position visuals"
         }
     }

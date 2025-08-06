@@ -12,8 +12,8 @@
     "version": "1.0.0",
     "category": "compressor",
     "formFactor": "500-series",
-    "faceplateImage": "assets/faceplates/dbx-560a-1.0.0.jpg",
-    "thumbnailImage": "assets/thumbnails/dbx-560a-1.0.0.jpg",
+    "faceplateImage": "assets/faceplates/dbx-560a-1.0.0.png",
+    "thumbnailImage": "assets/thumbnails/dbx-560a-1.0.0.png",
     "width": 150,
     "height": 525,
     "controls": [
@@ -88,7 +88,7 @@
                     "label": "In"
                 }
             ],
-            "image": "assets/controls/buttons/button-circle-led-above-sm-black.jpg"
+            "image": "assets/controls/buttons/button-circle-led-above-sm-black.png"
         },
         {
             "id": "over-easy",
@@ -156,7 +156,7 @@
                     "label": "Output"
                 }
             ],
-            "image": "assets/controls/buttons/button-dbx-level-led-sm-black.jpg"
+            "image": "assets/controls/buttons/button-dbx-level-led-sm-black.png"
         }
     ]
 }

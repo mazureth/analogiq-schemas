@@ -15,8 +15,8 @@
     "version": "1.0.0",
     "category": "equalizer",
     "formFactor": "19-inch-rack",
-    "faceplateImage": "assets/faceplates/warm-tube-eq-1.0.0.jpg",
-    "thumbnailImage": "assets/thumbnails/warm-tube-eq-1.0.0.jpg",
+    "faceplateImage": "assets/faceplates/warm-tube-eq-1.0.0.png",
+    "thumbnailImage": "assets/thumbnails/warm-tube-eq-1.0.0.png",
     "width": 1900,
     "height": 350,
     "controls": [

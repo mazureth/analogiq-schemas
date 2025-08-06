@@ -11,8 +11,8 @@
     "version": "1.0.0",
     "category": "compressor",
     "formFactor": "19-inch-rack",
-    "faceplateImage": "assets/faceplates/la2a-compressor-1.0.0.jpg",
-    "thumbnailImage": "assets/thumbnails/la2a-compressor-1.0.0.jpg",
+    "faceplateImage": "assets/faceplates/la2a-compressor-1.0.0.png",
+    "thumbnailImage": "assets/thumbnails/la2a-compressor-1.0.0.png",
     "width": 1900,
     "height": 525,
     "controls": [
