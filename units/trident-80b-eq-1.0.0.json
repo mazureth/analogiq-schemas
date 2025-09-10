@@ -22,7 +22,7 @@
             "label": "HF Gain",
             "type": "knob",
             "position": {
-                "x": 0.508,
+                "x": 0.57,
                 "y": 0.167
             },
             "value": 180,
@@ -35,7 +35,7 @@
             "label": "HMF Gain",
             "type": "knob",
             "position": {
-                "x": 0.508,
+                "x": 0.57,
                 "y": 0.36
             },
             "value": 180,
@@ -48,7 +48,7 @@
             "label": "HMF Freq",
             "type": "knob",
             "position": {
-                "x": 0.447,
+                "x": 0.05,
                 "y": 0.263
             },
             "value": 180,
@@ -61,7 +61,7 @@
             "label": "LMF Gain",
             "type": "knob",
             "position": {
-                "x": 0.508,
+                "x": 0.57,
                 "y": 0.545
             },
             "value": 180,
@@ -74,7 +74,7 @@
             "label": "LMF Freq",
             "type": "knob",
             "position": {
-                "x": 0.447,
+                "x": 0.05,
                 "y": 0.452
             },
             "value": 180,
@@ -87,7 +87,7 @@
             "label": "LF Gain",
             "type": "knob",
             "position": {
-                "x": 0.508,
+                "x": 0.57,
                 "y": 0.72
             },
             "value": 180,
@@ -100,7 +100,7 @@
             "label": "HPF",
             "type": "button",
             "position": {
-                "x": 0.471,
+                "x": 0.27,
                 "y": 0.598
             },
             "momentary": false,
@@ -134,8 +134,8 @@
             "label": "Low Freq",
             "type": "button",
             "position": {
-                "x": 0.471,
-                "y": 0.689
+                "x": 0.27,
+                "y": 0.69
             },
             "momentary": false,
             "value": 0,
@@ -168,7 +168,7 @@
             "label": "Hi Freq",
             "type": "button",
             "position": {
-                "x": 0.471,
+                "x": 0.27,
                 "y": 0.14
             },
             "momentary": false,
@@ -202,7 +202,7 @@
             "label": "EQ IN",
             "type": "button",
             "position": {
-                "x": 0.471,
+                "x": 0.27,
                 "y": 0.842
             },
             "momentary": false,

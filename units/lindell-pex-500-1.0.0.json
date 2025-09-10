@@ -22,7 +22,7 @@
             "label": "Hi Atten",
             "type": "knob",
             "position": {
-                "x": 0.489,
+                "x": 0.41,
                 "y": 0.127
             },
             "value": 30,
@@ -35,7 +35,7 @@
             "label": "Hi Boost",
             "type": "knob",
             "position": {
-                "x": 0.448,
+                "x": 0.07,
                 "y": 0.293
             },
             "value": 30,
@@ -48,7 +48,7 @@
             "label": "Bandwidth",
             "type": "knob",
             "position": {
-                "x": 0.489,
+                "x": 0.41,
                 "y": 0.46
             },
             "value": 30,
@@ -61,7 +61,7 @@
             "label": "Low Boost",
             "type": "knob",
             "position": {
-                "x": 0.448,
+                "x": 0.07,
                 "y": 0.615
             },
             "value": 30,
@@ -74,7 +74,7 @@
             "label": "Low Atten",
             "type": "knob",
             "position": {
-                "x": 0.489,
+                "x": 0.41,
                 "y": 0.785
             },
             "value": 30,
@@ -87,7 +87,7 @@
             "label": "Hi Atten Freq",
             "type": "switch",
             "position": {
-                "x": 0.455,
+                "x": 0.13,
                 "y": 0.165
             },
             "options": [
@@ -131,7 +131,7 @@
             "label": "Hi Boost Freq",
             "type": "switch",
             "position": {
-                "x": 0.518,
+                "x": 0.64,
                 "y": 0.34
             },
             "options": [
@@ -175,7 +175,7 @@
             "label": "Low Freq",
             "type": "switch",
             "position": {
-                "x": 0.518,
+                "x": 0.64,
                 "y": 0.66
             },
             "options": [
@@ -219,7 +219,7 @@
             "label": "Bypass",
             "type": "button",
             "position": {
-                "x": 0.452,
+                "x": 0.1,
                 "y": 0.856
             },
             "momentary": false,

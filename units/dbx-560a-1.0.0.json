@@ -22,7 +22,7 @@
             "label": "Threshold",
             "type": "knob",
             "position": {
-                "x": 0.461,
+                "x": 0.19,
                 "y": 0.235
             },
             "value": 180,
@@ -35,7 +35,7 @@
             "label": "Ratio",
             "type": "knob",
             "position": {
-                "x": 0.461,
+                "x": 0.19,
                 "y": 0.44
             },
             "value": 180,
@@ -48,7 +48,7 @@
             "label": "Output",
             "type": "knob",
             "position": {
-                "x": 0.461,
+                "x": 0.19,
                 "y": 0.65
             },
             "value": 180,
@@ -61,7 +61,7 @@
             "label": "Bypass",
             "type": "button",
             "position": {
-                "x": 0.473,
+                "x": 0.29,
                 "y": 0.79
             },
             "momentary": false,
@@ -95,7 +95,7 @@
             "label": "Over-Easy",
             "type": "button",
             "position": {
-                "x": 0.449,
+                "x": 0.08,
                 "y": 0.09
             },
             "momentary": false,
@@ -129,7 +129,7 @@
             "label": "Level",
             "type": "button",
             "position": {
-                "x": 0.5070,
+                "x": 0.57,
                 "y": 0.82
             },
             "momentary": false,

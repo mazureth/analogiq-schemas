@@ -21,7 +21,7 @@
             "label": "16k",
             "type": "fader",
             "position": {
-                "x": 0.467,
+                "x": 0.23,
                 "y": 0.17
             },
             "value": 0.5,
@@ -34,7 +34,7 @@
             "label": "8k",
             "type": "fader",
             "position": {
-                "x": 0.467,
+                "x": 0.23,
                 "y": 0.244
             },
             "value": 0.5,
@@ -47,7 +47,7 @@
             "label": "4k",
             "type": "fader",
             "position": {
-                "x": 0.467,
+                "x": 0.23,
                 "y": 0.316
             },
             "value": 0.5,
@@ -60,7 +60,7 @@
             "label": "2k",
             "type": "fader",
             "position": {
-                "x": 0.467,
+                "x": 0.23,
                 "y": 0.387
             },
             "value": 0.5,
@@ -73,7 +73,7 @@
             "label": "1k",
             "type": "fader",
             "position": {
-                "x": 0.467,
+                "x": 0.23,
                 "y": 0.463
             },
             "value": 0.5,
@@ -86,7 +86,7 @@
             "label": "500Hz",
             "type": "fader",
             "position": {
-                "x": 0.467,
+                "x": 0.23,
                 "y": 0.533
             },
             "value": 0.5,
@@ -99,7 +99,7 @@
             "label": "250Hz",
             "type": "fader",
             "position": {
-                "x": 0.467,
+                "x": 0.23,
                 "y": 0.602
             },
             "value": 0.5,
@@ -112,7 +112,7 @@
             "label": "125Hz",
             "type": "fader",
             "position": {
-                "x": 0.467,
+                "x": 0.23,
                 "y": 0.676
             },
             "value": 0.5,
@@ -125,7 +125,7 @@
             "label": "63Hz",
             "type": "fader",
             "position": {
-                "x": 0.467,
+                "x": 0.23,
                 "y": 0.747
             },
             "value": 0.5,
@@ -138,7 +138,7 @@
             "label": "31Hz",
             "type": "fader",
             "position": {
-                "x": 0.467,
+                "x": 0.23,
                 "y": 0.819
             },
             "value": 0.5,
@@ -151,7 +151,7 @@
             "label": "EQ In",
             "type": "button",
             "position": {
-                "x": 0.48,
+                "x": 0.34,
                 "y": 0.865
             },
             "momentary": false,
